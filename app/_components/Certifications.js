@@ -10,7 +10,7 @@ export default function Certifications() {
   return (
     <div
       id="certifications"
-      className="lg:mt-[300px] p-10 lg:p-0 lg:ml-[150px] lg:mr-[150px]"
+      className="lg:mt-[300px]  mt-[180px] p-[15px] lg:p-0 lg:ml-[150px] lg:mr-[150px]"
     >
       <h2 className="text-white text-4xl font-bold relative inline-block mb-3">
         My <span className="ml-2">Certifications</span>
@@ -25,7 +25,7 @@ export default function Certifications() {
       </p>
 
       <div className="grid grid-cols-1 lg:grid-cols-3 mt-[50px]">
-        <div className="p-[60px] pl-[0px]">
+        <div className="lg:p-[60px] p-[0px] pt-[50px] pl-[0px]">
           <Image
             width={670}
             height={300}
@@ -61,7 +61,7 @@ export default function Certifications() {
             </svg>
           </Link>
         </div>
-        <div className="p-[60px] pl-[0px]">
+        <div className="lg:p-[60px] p-[0px] pt-[50px] pl-[0px]">
           <Image
             width={670}
             height={300}
@@ -97,7 +97,7 @@ export default function Certifications() {
             </svg>
           </Link>
         </div>
-        <div className="p-[60px] pl-[0px]">
+        <div className="lg:p-[60px] p-[0px] pt-[50px] pl-[0px]">
           <Image
             width={670}
             height={300}
@@ -134,7 +134,7 @@ export default function Certifications() {
           </Link>
         </div>
 
-        <div className="p-[60px] pl-[0px]">
+        <div className="lg:p-[60px] p-[0px] pt-[50px] pl-[0px]">
           <Image
             width={670}
             height={300}
@@ -170,7 +170,7 @@ export default function Certifications() {
           </Link>
         </div>
 
-        <div className="p-[60px] pl-[0px]">
+        <div className="lg:p-[60px] p-[0px] pt-[50px] pl-[0px]">
           <Image
             width={670}
             height={300}

@@ -2,7 +2,7 @@ export default function Contact() {
   return (
     <section
       id="contact"
-      className="lg:mt-[170px] p-10 lg:p-0 lg:ml-[150px] lg:mr-[150px]"
+      className="lg:mt-[170px] mt-[100px] p-[15px] lg:p-0 lg:ml-[150px] lg:mr-[150px]"
     >
       <h2 className="text-white text-center lg:text-start text-4xl font-bold mb-3 font-[Inconsolata]">
         Want to get in touch?

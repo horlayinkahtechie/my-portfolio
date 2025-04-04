@@ -8,7 +8,7 @@ export default function Projects() {
   return (
     <section
       id="my-projects"
-      className="lg:mt-[300px] p-10 lg:p-0  lg:ml-[150px] lg:mr-[150px]"
+      className="lg:mt-[300px]  mt-[180px] p-[15px] lg:p-0  lg:ml-[150px] lg:mr-[150px]"
     >
       <h2 className="text-white text-4xl font-bold relative inline-block mb-3">
         What I&apos;ve been working on

@@ -9,10 +9,10 @@ export default function Navbar() {
 
   return (
     <nav className="fixed top-0 left-0 w-full text-white bg-gray-900 p-6 z-50">
-      <div className="flex justify-between items-center max-w-6xl mx-auto p-4 nav">
+      <div className="flex justify-between items-center max-w-6xl mx-auto lg:p-4 p-2">
         <Link to="home" smooth={true} duration={500} className="cursor-pointer">
-          <span className="text-[1.8rem] font-bold font-[Inconsolata]">
-            Alao Abdul-salam Olayinka
+          <span className="lg:text-[1.8rem] text-[22px] font-bold font-[Inconsolata]">
+            Alao Abdul-salam
           </span>
         </Link>
 
