@@ -1,14 +1,16 @@
 import Link from "next/link";
 import Image from "next/image";
-import tomatts from "../../public/projects.png";
-import AdminDashboard from "../../public/Admin-dashboard.png";
-import adminOrdersPage from "../../public/admin-orders-page.png";
-import AdminCanceledOrdersPage from "../../public/admin-canceled-order.png";
-import Footer from "../_components/Footer";
+import votingHome from "../../public/voting-home-page.png";
+import votinPage1 from "../../public/voting-page-1.png";
+import votingPage2 from "../../public/voting-page-2.png";
+import votingPage3 from "../../public/voting-page-3.png";
+import presidentialVotingSystem from "../../public/presidential-voting-system.png";
+
 import Contact from "../_components/Contact";
+import Footer from "../_components/Footer";
 import ProjectNav from "../_components/ProjectNav";
 
-export default function tomattsAdmin() {
+export default function VotingSystemProject() {
   return (
     <>
       <ProjectNav />
@@ -17,27 +19,27 @@ export default function tomattsAdmin() {
           className="text-white text-4xl font-bold relative inline-block mb-3 font-[Inconsolata]"
           id="project-overview"
         >
-          Tomatts Restaurant Ordering and Reservation Administrator
+          Presidential Voting system
           <span className="absolute left-0 bottom-[-6px] w-[100%] h-2 bg-gradient-to-r from-blue-500 to-blue-700 transform -skew-x-12"></span>
         </h2>
         <p className="w-[100%] lg:w-[70%] text-white mt-5 leading-[35px] text-[19px] lg:text-[20px] lg:tracking-tight tracking-wide">
-          This is the admin part of the Tomatts Restaurant Ordering and
-          Reservation System. It enables website manager to be able track
-          orders, reservations revenue, canceled orders, new users, mark order
-          as delivered.
+          The Presidential Voting System is a web-based application developed
+          using React that allows users to securely vote for presidential
+          candidates in real-time. The system features a clean, responsive
+          interface where users can view candidates and cast their votes. It
+          includes a dynamic vote-counting that updates live as votes are
+          submitted. Designed with usability and transparency in mind, the
+          platform ensures a smooth and engaging voting experience.
         </p>
         <div className="grid grid-cols-3 text-start lg:gap-3 gap-[50%] w-[50%] mt-[40px] text-white font-[Inconsolata] text-[20px]">
           <div className="font-[Inconsolata]">
             <h3 className="font-bold">FEATURES</h3>
             <ul className="mt-3 text-[19px]">
-              <li className="pb-2">Admin Authentication</li>
-              <li className="pb-2">Admin Authorization</li>
-              <li className="pb-2">Track Orders</li>
-              <li className="pb-2">Track Reservations</li>
-              <li className="pb-2">Track Revenue</li>
-              <li className="pb-2">Insert Menu</li>
-              <li className="pb-2">Access Delivered Orders</li>
-              <li className="pb-2">Sales chart</li>
+              <li className="pb-2">User Authentication</li>
+              <li className="pb-2">User Authorization</li>
+              <li className="pb-2">Voting System</li>
+              <li className="pb-2">User profile</li>
+              <li className="pb-2">Admin</li>
             </ul>
           </div>
           <div>
@@ -78,23 +80,6 @@ export default function tomattsAdmin() {
                 CSS
               </li>
               <li>Bootstrap</li>
-              <li className="flex gap-2">
-                <svg
-                  className="text-[40px] mb-[20px]"
-                  stroke="currentColor"
-                  fill="currentColor"
-                  strokeWidth="0"
-                  role="img"
-                  viewBox="0 0 24 24"
-                  height="24px"
-                  width="24px"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <title></title>
-                  <path d="M12.001,4.8c-3.2,0-5.2,1.6-6,4.8c1.2-1.6,2.6-2.2,4.2-1.8c0.913,0.228,1.565,0.89,2.288,1.624 C13.666,10.618,15.027,12,18.001,12c3.2,0,5.2-1.6,6-4.8c-1.2,1.6-2.6,2.2-4.2,1.8c-0.913-0.228-1.565-0.89-2.288-1.624 C16.337,6.182,14.976,4.8,12.001,4.8z M6.001,12c-3.2,0-5.2,1.6-6,4.8c1.2-1.6,2.6-2.2,4.2-1.8c0.913,0.228,1.565,0.89,2.288,1.624 c1.177,1.194,2.538,2.576,5.512,2.576c3.2,0,5.2-1.6,6-4.8c-1.2,1.6-2.6,2.2-4.2,1.8c-0.913-0.228-1.565-0.89-2.288-1.624 C10.337,13.382,8.976,12,6.001,12z"></path>
-                </svg>
-                TailwindCSS
-              </li>
               <li className="flex gap-2">
                 {" "}
                 <svg
@@ -138,7 +123,7 @@ export default function tomattsAdmin() {
             <ul className="mt-3 text-[19px]">
               <li className="text-blue-500">
                 <Link
-                  href="https://tommat.netlify.app/admin/login"
+                  href="https://voting-system-ng.netlify.app/"
                   target="_default"
                 >
                   Live Preview
@@ -146,7 +131,7 @@ export default function tomattsAdmin() {
               </li>
               <li className="text-blue-500">
                 <Link
-                  href="https://github.com/horlayinkahtechie/tomats.git"
+                  href="https://github.com/horlayinkahtechie/nigeriaVotingPlatform.git"
                   target="_default"
                 >
                   GitHub Repo
@@ -158,59 +143,95 @@ export default function tomattsAdmin() {
 
         <div className="grid grid-cols-1 mt-[100px]">
           <Image
-            src={tomatts}
+            src={votingHome}
             alt="Tomatts Restaurant Ordering and Reservation system"
           />
         </div>
 
         <div
-          className="grid grid-cols-1 lg:grid-cols-1 w-[100%] mt-[100px] text-white"
+          className="grid grid-cols-1 lg:grid-cols-2 mt-[100px] text-white"
           id="project-details"
         >
-          <div className="lg:p-6 p-2">
+          <div className="p-6">
             <h3 className="font-[Inconsolata] text-[35px] font-bold mb-7">
-              How the Admin Is implemented
+              Explanation of Technology used
             </h3>
-            <div className="grid grid-cols-1 lg:grid-cols-2">
-              <div>
-                <p className="text-[20px] leading-8 mb-8 font-[200px]">
-                  The admin page of the restaurant ordering and reservation
-                  system was designed to give restaurant staff or managers full
-                  control over customer interactions and restaurant operations
-                  in real time. It was implemented using React.js for the
-                  frontend and Supabase for backend data management.
-                </p>
-                <p className="text-[20px] leading-8 mb-8">
-                  The admin interface has a clean, responsive layout built using
-                  Bootstrap and later changed to Tailwind CSS. It includes
-                  navigation links to different admin sections such as:
-                  Dashboard Overview, Order and Reservation tracking, Menu
-                  management.
-                </p>
-              </div>
+            <p className="text-[20px] leading-8 mb-8 font-[200px]">
+              The presidential voting system was built using React for the
+              frontend, ensuring a responsive and interactive user experience.
+              For routing between pages, React Router was used to manage
+              navigation within the application smoothly.
+            </p>
+            <p className="text-[20px] leading-8 mb-8">
+              The backend and authentication were handled using Supabase, which
+              provided a scalable and secure platform for storing user data and
+              votes. Authentication features in Supabase ensured that only
+              registered users could cast a vote.
+            </p>
+            <p className="text-[20px] leading-8 mb-8">
+              To prevent duplicate voting, Row Level Security (RLS) was enabled
+              in Supabase. This ensures that each user can vote only once by
+              enforcing strict rules on database access based on user identity.
+            </p>
 
-              <div>
-                <p className="text-[20px] leading-8 mb-8">
-                  Orders are placed by users on the frontend are automatically
-                  synced and displayed using data fetched from Supabase. Each
-                  order shows customer name, order items, quantity, total price,
-                  and time of order. Admins can mark orders as completed, in
-                  progress, or pending.
-                </p>
+            <p className="text-[20px] leading-8 mb-8">
+              Additionally, Bootstrap CSS was used to design a clean and modern
+              user interface, making the platform visually appealing and
+              mobile-friendly. The system also incorporated real-time vote
+              updates using Supabase&apos;s real-time features to display
+              accurate and dynamic vote counts.
+            </p>
+          </div>
 
-                <p className="text-[20px] leading-8 mb-8">
-                  Admins can view all upcoming reservations made through the
-                  customer interface. Each reservation includes customer name,
-                  selected date/time, number of people, and any special
-                  requests. Reservations are retrieved from the Supabase
-                  database and can be filtered by date or status. Although, menu
-                  is being fetched from an external API, admin can still add
-                  menu to the database. Additionally, admin authentication is
-                  handled using Supabase Auth, ensuring only authorized users
-                  can access the admin panel.
-                </p>
-              </div>
-            </div>
+          <div className="p-6">
+            <h3 className="font-[Inconsolata] text-[35px] font-bold mb-7">
+              Project Purpose and Goal
+            </h3>
+            <p className="text-[20px] leading-8 mb-8 font-[200px]">
+              The purpose of the presidential voting system is to provide a
+              secure, transparent, and user-friendly platform where individuals
+              can cast votes for presidential candidates digitally. It aims to
+              simulate real-life voting scenarios, helping users understand how
+              online voting systems work while promoting fairness and
+              credibility.
+            </p>
+            <p className="text-[20px] leading-8 mb-8">
+              While the goal is to prevent duplicate voting using authentication
+              and database-level security, enable real-time vote tracking to
+              display accurate vote counts, create a responsive and accessible
+              voting experience for all users, offer a seamless and simple
+              voting process to encourage participation.
+            </p>
+          </div>
+        </div>
+
+        <div
+          className="grid grid-cols-1 lg:grid-cols-1 mt-[100px] text-white"
+          id="project-details"
+        >
+          <div className="p-6">
+            <h3 className="font-[Inconsolata] text-[35px] font-bold mb-7">
+              How the voting works
+            </h3>
+            <p className="text-[20px] leading-8 mb-8 font-[200px]">
+              To participate in the voting process, users must first create an
+              account or log in if they already have one. This ensures that
+              every vote is tied to a verified user, preventing multiple votes
+              from the same individual. Once authenticated, users will be
+              presented with a list of presidential candidates.
+            </p>
+            <p className="text-[20px] leading-8 mb-8">
+              They can then select their preferred candidate and submit their
+              vote. After submitting, the system immediately records the vote in
+              the database. Thanks to the implementation of Row Level Security
+              (RLS) in Supabase, users are restricted from voting more than
+              once.
+            </p>
+            <p className="text-[20px] leading-8 mb-8">
+              After voting, users can also view live updates of the voting
+              results displayed in a counter format, giving them real-time
+              insights into how each candidate is performing.
+            </p>
           </div>
         </div>
 
@@ -219,20 +240,26 @@ export default function tomattsAdmin() {
           id="screenshots"
         >
           <Image
-            src={AdminDashboard}
-            alt="Admin dashboard"
+            src={presidentialVotingSystem}
+            alt="Voting system screenshot"
             placeholder="blur"
             className="p-10"
           />
           <Image
-            src={adminOrdersPage}
-            alt="Admin Orders page"
+            src={votinPage1}
+            alt="Voting system screenshot"
             placeholder="blur"
             className="p-10"
           />
           <Image
-            src={AdminCanceledOrdersPage}
-            alt="Admin Canceled orders page"
+            src={votingPage2}
+            alt="Voting system screenshot"
+            placeholder="blur"
+            className="p-10"
+          />
+          <Image
+            src={votingPage3}
+            alt="Voting system screenshot"
             placeholder="blur"
             className="p-10"
           />
@@ -243,43 +270,31 @@ export default function tomattsAdmin() {
             <h3 className="font-[Inconsolata] text-[35px] font-bold mb-7">
               Future Updates
             </h3>
-            <div className="grid grid-cols-1 lg:grid-cols-2 gap-10">
+            <div className="grid grid-cols-1 lg:grid-cols-1">
               <div>
                 <p className="text-[20px] leading-8 mb-8 font-[200px]">
-                  To improve the efficiency and user experience of the
-                  restaurant reservation and ordering system, several future
-                  enhancements are being planned. One of the major features in
-                  development is the live chat system. This will enable
-                  real-time communication between customers and the restaurant
-                  staff, allowing users to ask questions, request assistance, or
-                  make special meal or seating requests directly through the
-                  website.
+                  In future updates of the voting system, I plan to implement
+                  NIN (National Identification Number) validation to ensure that
+                  each voter is a verified Nigerian citizen. This will help
+                  improve the integrity of the system by making sure only
+                  eligible users participate. Similarly, I also intend to
+                  integrate VIN (Voter Identification Number) validation, which
+                  will cross-check users with the official voter registry before
+                  allowing them to vote. These features will strengthen the
+                  system&apos;s authenticity and reduce fraudulent entries.
                 </p>
                 <p className="text-[20px] leading-8 mb-8">
-                  Another important upgrade is the implementation of email and
-                  SMS notifications. This feature will automatically send
-                  confirmation messages to customers after placing an order or
-                  making a reservation. Additionally, users will receive
-                  reminders and important updates regarding their reservations,
-                  ensuring better communication and reducing missed bookings.
+                  Additionally, I want to introduce email and SMS notifications.
+                  After a user successfully casts their vote, the system will
+                  send a confirmation message to their email or phone number.
+                  This gives users confidence that their vote has been recorded
+                  properly.
                 </p>
-              </div>
-
-              <div>
                 <p className="text-[20px] leading-8 mb-8">
-                  A more interactive experience will also be introduced through
-                  a table layout and selection feature. Customers will be able
-                  to view a visual map of the restaurant&apos;s seating
-                  arrangement and choose their preferred table when making a
-                  reservation. This brings more personalization and convenience
-                  to the reservation process and helps the restaurant better
-                  manage available seats.
-                </p>
-
-                <p className="text-[20px] leading-8 mb-8">
-                  These upcoming features aim to make the system more dynamic,
-                  engaging, and user-friendly for both the customers and the
-                  restaurant staff.
+                  I&apos;m also considering building an advanced admin panel
+                  that allows the admin to manage candidates, monitor voting
+                  activity, and view analytics or download results in PDF or CSV
+                  format.
                 </p>
               </div>
             </div>

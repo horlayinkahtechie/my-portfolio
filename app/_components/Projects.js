@@ -1,5 +1,5 @@
 import Image from "next/image";
-import RestaurantReservationSystem from "../../public/projects.png";
+import RestaurantReservationSystem from "../../public/Admin-dashboard.png";
 import TheWildOasis from "../../public/the-wild-oasis.png";
 import presidentialVotingSystem from "../../public/presidential-voting-system.png";
 import savor from "../../public/Savor.png";
@@ -43,7 +43,7 @@ export default function Projects() {
             system that allows users to pay for what they ordered.
           </p>
           <Link
-            className="text-white text-[22px] lg:text-[25px] flex gap-5 font-[Inconsolata]"
+            className="text-white text-[22px] lg:text-[25px] flex gap-5 font-[Inconsolata] hover:text-blue-400"
             href="/savour-project"
             target="_blank"
           >
@@ -81,7 +81,7 @@ export default function Projects() {
             insert meal into the database with a well designed UI.
           </p>
           <Link
-            className="text-white text-[22px] lg:text-[25px] flex gap-5 font-[Inconsolata]"
+            className="text-white text-[22px] lg:text-[25px] flex gap-5 font-[Inconsolata] hover:text-blue-400"
             href="/tomatts-project-admin"
             target="_blank"
           >
@@ -118,7 +118,7 @@ export default function Projects() {
             company offers.
           </p>
           <Link
-            className="text-white text-[25px] flex gap-5 font-[Inconsolata]"
+            className="text-white text-[25px] flex gap-5 font-[Inconsolata] hover:text-blue-400"
             href="#/the-wild-oasis"
             target="_blank"
           >
@@ -154,8 +154,8 @@ export default function Projects() {
             citizens to vote not more than once via a secure platform.
           </p>
           <Link
-            className="text-white text-[25px] flex gap-5 font-[Inconsolata]"
-            href="#/presidential-voting-system"
+            className="text-white text-[25px] flex gap-5 font-[Inconsolata] hover:text-blue-400"
+            href="/voting-system-project"
             target="_blank"
           >
             View Project {""}
@@ -192,7 +192,7 @@ export default function Projects() {
           </p>
           <div className="grid grid-cols-1 lg:grid-cols-2">
             <Link
-              className="text-white text-[25px] flex gap-5 font-[Inconsolata]"
+              className="text-white text-[25px] flex gap-5 font-[Inconsolata] hover:text-blue-400"
               href="#/unizik-alumni"
               target="_blank"
             >
@@ -211,7 +211,7 @@ export default function Projects() {
               </svg>
             </Link>
             <Link
-              className="text-white text-[25px] flex gap-5 font-[Inconsolata]"
+              className="text-white text-[25px] flex gap-5 font-[Inconsolata] hover:text-blue-400"
               href="/Uniziq-Alumni-Report.docx"
               target="_blank"
             >
@@ -252,7 +252,7 @@ export default function Projects() {
           </p>
           <div className="grid grid-cols-1 lg:grid-cols-2">
             <Link
-              className="text-white text-[25px] flex gap-5 font-[Inconsolata]"
+              className="text-white text-[25px] flex gap-5 font-[Inconsolata] hover:text-blue-400"
               href="#"
               target="_blank"
             >
@@ -271,7 +271,7 @@ export default function Projects() {
               </svg>
             </Link>
             <Link
-              className="text-white text-[25px] flex gap-5 font-[Inconsolata]"
+              className="text-white text-[25px] flex gap-5 font-[Inconsolata] hover:text-blue-400"
               href="/Translation-app-project-report.docx"
               target="_blank"
             >
