@@ -14,7 +14,7 @@ export default function MySkills() {
         implement them in real-world scenarios and applications.
       </p>
 
-      <div className="grid grid-cols-2 sm:grid-cols-4 justify-between items-center max-w-6xl mx-auto mt-[70px]">
+      <div className="grid grid-cols-3 lg:grid-cols-4 justify-between items-center max-w-6xl mx-auto mt-[70px]">
         <div className="text-white pb-[35px]">
           <svg
             className="text-[40px] mb-[20px]"
