@@ -1,3 +1,7 @@
+"use client";
+import { motion, useAnimation } from "framer-motion";
+import { useEffect } from "react";
+import { useInView } from "react-intersection-observer";
 import Link from "next/link";
 import Image from "next/image";
 import ReactCertificate from "../../public/React-certificate.jpg";
@@ -7,8 +11,25 @@ import UXDesignFundamentals from "../../public/ux certificate.png";
 import WireFrameAndLowFidelityPrototype from "../../public/low fidelity prototype certificate.png";
 
 export default function Certifications() {
+  const controls = useAnimation();
+  const [ref, inView] = useInView({ threshold: 0.2 });
+
+  useEffect(() => {
+    if (inView) {
+      controls.start("visible");
+    }
+  }, [controls, inView]);
+
   return (
-    <div
+    <motion.div
+      ref={ref}
+      initial="hidden"
+      animate={controls}
+      variants={{
+        hidden: { opacity: 0, y: 50 },
+        visible: { opacity: 1, y: 0 },
+      }}
+      transition={{ duration: 0.6, ease: "easeOut" }}
       id="certifications"
       className="lg:mt-[300px]  mt-[180px] p-[15px] lg:p-0 lg:ml-[150px] lg:mr-[150px]"
     >
@@ -206,6 +227,6 @@ export default function Certifications() {
           </Link>
         </div>
       </div>
-    </div>
+    </motion.div>
   );
 }

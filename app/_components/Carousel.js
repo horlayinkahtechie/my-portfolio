@@ -1,9 +1,30 @@
 // import Image from "next/image";
 // import myPicture from "../../public/My-picture.jpg";
+"use client";
+import { motion, useAnimation } from "framer-motion";
+import { useEffect } from "react";
+import { useInView } from "react-intersection-observer";
 
 export default function Carousel() {
+  const controls = useAnimation();
+  const [ref, inView] = useInView({ threshold: 0.2 });
+
+  useEffect(() => {
+    if (inView) {
+      controls.start("visible");
+    }
+  }, [controls, inView]);
+
   return (
-    <section
+    <motion.div
+      ref={ref}
+      initial="hidden"
+      animate={controls}
+      variants={{
+        hidden: { opacity: 0, y: 50 },
+        visible: { opacity: 1, y: 0 },
+      }}
+      transition={{ duration: 0.6, ease: "easeOut" }}
       id="home"
       className="grid grid-cols-1 sm:grid-cols-1 lg:grid-cols-2 gap-6 lg:pt-[300px] mt-[200px] lg:mt-[0px] ml-[10px] mr-[10px] mb-[50px] lg:ml-[150px] lg:mr-[150px] min-h-[60vh] h-screen"
     >
@@ -27,6 +48,6 @@ export default function Carousel() {
         placeholder="blur"
         alt="Alao Abdul-salam Olayinka"
       /> */}
-    </section>
+    </motion.div>
   );
 }

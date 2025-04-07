@@ -1,6 +1,28 @@
+"use client";
+import { motion, useAnimation } from "framer-motion";
+import { useEffect } from "react";
+import { useInView } from "react-intersection-observer";
+
 export default function MySkills() {
+  const controls = useAnimation();
+  const [ref, inView] = useInView({ threshold: 0.2 });
+
+  useEffect(() => {
+    if (inView) {
+      controls.start("visible");
+    }
+  }, [controls, inView]);
+
   return (
-    <section
+    <motion.div
+      ref={ref}
+      initial="hidden"
+      animate={controls}
+      variants={{
+        hidden: { opacity: 0, y: 50 },
+        visible: { opacity: 1, y: 0 },
+      }}
+      transition={{ duration: 0.6, ease: "easeOut" }}
       id="my-skills"
       className="lg:mt-[300px]  mt-[180px] p-[15px] lg:p-0 lg:ml-[150px] lg:mr-[150px]"
     >
@@ -20,7 +42,7 @@ export default function MySkills() {
             className="text-[40px] mb-[20px]"
             stroke="currentColor"
             fill="currentColor"
-            stroke-width="0"
+            strokeWidth="0"
             role="img"
             viewBox="0 0 24 24"
             height="1em"
@@ -37,7 +59,7 @@ export default function MySkills() {
             className="text-[40px] mb-[20px]"
             stroke="currentColor"
             fill="currentColor"
-            stroke-width="0"
+            strokeWidth="0"
             role="img"
             viewBox="0 0 24 24"
             height="1em"
@@ -54,7 +76,7 @@ export default function MySkills() {
             className="text-[40px] mb-[20px]"
             stroke="currentColor"
             fill="currentColor"
-            stroke-width="0"
+            strokeWidth="0"
             role="img"
             viewBox="0 0 24 24"
             height="1em"
@@ -68,27 +90,25 @@ export default function MySkills() {
         </div>
         <div className="text-white pb-[35px]">
           <svg
-            className="text-[40px] mb-[20px]"
-            stroke="currentColor"
-            fill="currentColor"
-            stroke-width="0"
-            role="img"
-            viewBox="0 0 24 24"
-            height="1em"
-            width="1em"
             xmlns="http://www.w3.org/2000/svg"
+            height="65"
+            width="65"
+            role="img"
+            fill="currentColor"
+            className="bi bi-bootstrap-fill text-[40px]"
+            viewBox="0 0 24 24"
           >
-            <title></title>
-            <path d="M1.125 0C.502 0 0 .502 0 1.125v21.75C0 23.498.502 24 1.125 24h21.75c.623 0 1.125-.502 1.125-1.125V1.125C24 .502 23.498 0 22.875 0zm17.363 9.75c.612 0 1.154.037 1.627.111a6.38 6.38 0 0 1 1.306.34v2.458a3.95 3.95 0 0 0-.643-.361 5.093 5.093 0 0 0-.717-.26 5.453 5.453 0 0 0-1.426-.2c-.3 0-.573.028-.819.086a2.1 2.1 0 0 0-.623.242c-.17.104-.3.229-.393.374a.888.888 0 0 0-.14.49c0 .196.053.373.156.529.104.156.252.304.443.444s.423.276.696.41c.273.135.582.274.926.416.47.197.892.407 1.266.628.374.222.695.473.963.753.268.279.472.598.614.957.142.359.214.776.214 1.253 0 .657-.125 1.21-.373 1.656a3.033 3.033 0 0 1-1.012 1.085 4.38 4.38 0 0 1-1.487.596c-.566.12-1.163.18-1.79.18a9.916 9.916 0 0 1-1.84-.164 5.544 5.544 0 0 1-1.512-.493v-2.63a5.033 5.033 0 0 0 3.237 1.2c.333 0 .624-.03.872-.09.249-.06.456-.144.623-.25.166-.108.29-.234.373-.38a1.023 1.023 0 0 0-.074-1.089 2.12 2.12 0 0 0-.537-.5 5.597 5.597 0 0 0-.807-.444 27.72 27.72 0 0 0-1.007-.436c-.918-.383-1.602-.852-2.053-1.405-.45-.553-.676-1.222-.676-2.005 0-.614.123-1.141.369-1.582.246-.441.58-.804 1.004-1.089a4.494 4.494 0 0 1 1.47-.629 7.536 7.536 0 0 1 1.77-.201zm-15.113.188h9.563v2.166H9.506v9.646H6.789v-9.646H3.375z"></path>
+            <path d="M6.375 7.125V4.658h1.78c.973 0 1.542.457 1.542 1.237 0 .802-.604 1.23-1.764 1.23zm0 3.762h1.898c1.184 0 1.81-.48 1.81-1.377 0-.885-.65-1.348-1.886-1.348H6.375z" />
+            <path d="M4.002 0a4 4 0 0 0-4 4v8a4 4 0 0 0 4 4h8a4 4 0 0 0 4-4V4a4 4 0 0 0-4-4zm1.06 12V3.545h3.399c1.587 0 2.543.809 2.543 2.11 0 .884-.65 1.675-1.483 1.816v.1c1.143.117 1.904.931 1.904 2.033 0 1.488-1.084 2.396-2.888 2.396z" />
           </svg>
-          TypeScript
+          Bootstrap
         </div>
         <div className="text-white pb-[35px]">
           <svg
             className="text-[40px] mb-[20px]"
             stroke="currentColor"
             fill="currentColor"
-            stroke-width="0"
+            strokeWidth="0"
             role="img"
             viewBox="0 0 24 24"
             height="1em"
@@ -105,7 +125,7 @@ export default function MySkills() {
             className="text-[40px] mb-[20px]"
             stroke="currentColor"
             fill="currentColor"
-            stroke-width="0"
+            strokeWidth="0"
             role="img"
             viewBox="0 0 24 24"
             height="1em"
@@ -122,7 +142,7 @@ export default function MySkills() {
             className="text-[40px] mb-[20px]"
             stroke="currentColor"
             fill="currentColor"
-            stroke-width="0"
+            strokeWidth="0"
             role="img"
             viewBox="0 0 24 24"
             height="1em"
@@ -139,7 +159,7 @@ export default function MySkills() {
             className="text-[40px] mb-[20px]"
             stroke="currentColor"
             fill="currentColor"
-            stroke-width="0"
+            strokeWidth="0"
             role="img"
             viewBox="0 0 24 24"
             height="1em"
@@ -156,7 +176,7 @@ export default function MySkills() {
             className="text-[40px] mb-[20px]"
             stroke="currentColor"
             fill="currentColor"
-            stroke-width="0"
+            strokeWidth="0"
             role="img"
             viewBox="0 0 24 24"
             height="1em"
@@ -173,7 +193,7 @@ export default function MySkills() {
             className="text-[40px] mb-[20px]"
             stroke="currentColor"
             fill="currentColor"
-            stroke-width="0"
+            strokeWidth="0"
             role="img"
             viewBox="0 0 24 24"
             height="1em"
@@ -190,7 +210,7 @@ export default function MySkills() {
             className="text-[40px] mb-[20px]"
             stroke="currentColor"
             fill="currentColor"
-            stroke-width="0"
+            strokeWidth="0"
             role="img"
             viewBox="0 0 24 24"
             height="1em"
@@ -207,7 +227,7 @@ export default function MySkills() {
             className="text-[40px] mb-[20px]"
             stroke="currentColor"
             fill="currentColor"
-            stroke-width="0"
+            strokeWidth="0"
             role="img"
             viewBox="0 0 24 24"
             height="1em"
@@ -224,7 +244,7 @@ export default function MySkills() {
             className="text-[40px] mb-[20px]"
             stroke="currentColor"
             fill="currentColor"
-            stroke-width="0"
+            strokeWidth="0"
             role="img"
             viewBox="0 0 24 24"
             height="1em"
@@ -241,7 +261,7 @@ export default function MySkills() {
             className="text-[40px] mb-[20px]"
             stroke="currentColor"
             fill="currentColor"
-            stroke-width="0"
+            strokeWidth="0"
             role="img"
             viewBox="0 0 24 24"
             height="1em"
@@ -258,7 +278,7 @@ export default function MySkills() {
             className="text-[40px] mb-[20px]"
             stroke="currentColor"
             fill="currentColor"
-            stroke-width="0"
+            strokeWidth="0"
             role="img"
             viewBox="0 0 24 24"
             height="1em"
@@ -275,7 +295,7 @@ export default function MySkills() {
             className="text-[40px] mb-[20px]"
             stroke="currentColor"
             fill="currentColor"
-            stroke-width="0"
+            strokeWidth="0"
             role="img"
             viewBox="0 0 24 24"
             height="1em"
@@ -288,6 +308,6 @@ export default function MySkills() {
           Git
         </div>
       </div>
-    </section>
+    </motion.div>
   );
 }

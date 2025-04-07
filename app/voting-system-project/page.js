@@ -1,3 +1,4 @@
+"use client";
 import Link from "next/link";
 import Image from "next/image";
 import votingHome from "../../public/voting-home-page.png";
@@ -10,11 +11,28 @@ import Contact from "../_components/Contact";
 import Footer from "../_components/Footer";
 import ProjectNav from "../_components/ProjectNav";
 
+import { motion, useAnimation } from "framer-motion";
+import { useEffect } from "react";
+import { useInView } from "react-intersection-observer";
+
+// export const metadata = {
+//   title: "Voting system project",
+// };
+
 export default function VotingSystemProject() {
+  const controls = useAnimation();
+  const [ref, inView] = useInView({ threshold: 0.2 });
+
+  useEffect(() => {
+    if (inView) {
+      controls.start("visible");
+    }
+  }, [controls, inView]);
+
   return (
     <>
       <ProjectNav />
-      <div className="lg:mt-[170px]  mt-[120px] p-[15px] lg:p-0 lg:ml-[150px] lg:mr-[150px]">
+      <div className="lg:mt-[170px]  mt-[120px] p-[8px] lg:p-0 lg:ml-[150px] lg:mr-[150px]">
         <h2
           className="text-white text-4xl font-bold relative inline-block mb-3 font-[Inconsolata]"
           id="project-overview"
@@ -31,7 +49,7 @@ export default function VotingSystemProject() {
           submitted. Designed with usability and transparency in mind, the
           platform ensures a smooth and engaging voting experience.
         </p>
-        <div className="grid grid-cols-3 text-start lg:gap-3 gap-[50%] w-[50%] mt-[40px] text-white font-[Inconsolata] text-[20px]">
+        <div className="grid grid-cols-3 text-start lg:gap-3 gap-50 w-[50%] mt-[40px] text-white font-[Inconsolata] text-[20px]">
           <div className="font-[Inconsolata]">
             <h3 className="font-bold">FEATURES</h3>
             <ul className="mt-3 text-[19px]">
@@ -141,14 +159,20 @@ export default function VotingSystemProject() {
           </div>
         </div>
 
-        <div className="grid grid-cols-1 mt-[100px]">
-          <Image
-            src={votingHome}
-            alt="Tomatts Restaurant Ordering and Reservation system"
-          />
-        </div>
+        <Image
+          src={votingHome}
+          alt="Tomatts Restaurant Ordering and Reservation system"
+        />
 
         <div
+          ref={ref}
+          initial="hidden"
+          animate={controls}
+          variants={{
+            hidden: { opacity: 0, y: 50 },
+            visible: { opacity: 1, y: 0 },
+          }}
+          transition={{ duration: 0.6, ease: "easeOut" }}
           className="grid grid-cols-1 lg:grid-cols-2 mt-[100px] text-white"
           id="project-details"
         >
@@ -265,7 +289,17 @@ export default function VotingSystemProject() {
           />
         </div>
 
-        <div className="grid grid-cols-1 lg:grid-cols-1 w-[100%] mt-[100px] text-white">
+        <div
+          ref={ref}
+          initial="hidden"
+          animate={controls}
+          variants={{
+            hidden: { opacity: 0, y: 50 },
+            visible: { opacity: 1, y: 0 },
+          }}
+          transition={{ duration: 0.6, ease: "easeOut" }}
+          className="grid grid-cols-1 lg:grid-cols-1 w-[100%] mt-[100px] text-white"
+        >
           <div className="lg:p-6 p-2">
             <h3 className="font-[Inconsolata] text-[35px] font-bold mb-7">
               Future Updates

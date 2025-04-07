@@ -1,3 +1,4 @@
+"use client";
 import Link from "next/link";
 import Image from "next/image";
 import tomatts from "../../public/projects.png";
@@ -8,11 +9,38 @@ import Footer from "../_components/Footer";
 import Contact from "../_components/Contact";
 import ProjectNav from "../_components/ProjectNav";
 
+// export const metadata = {
+//   title: "Tomatt project admin",
+// };
+
+import { motion, useAnimation } from "framer-motion";
+import { useEffect } from "react";
+import { useInView } from "react-intersection-observer";
+
 export default function tomattsAdmin() {
+  const controls = useAnimation();
+  const [ref, inView] = useInView({ threshold: 0.2 });
+
+  useEffect(() => {
+    if (inView) {
+      controls.start("visible");
+    }
+  }, [controls, inView]);
+
   return (
     <>
       <ProjectNav />
-      <div className="lg:mt-[170px]  mt-[120px] p-[15px] lg:p-0 lg:ml-[150px] lg:mr-[150px]">
+      <motion.div
+        ref={ref}
+        initial="hidden"
+        animate={controls}
+        variants={{
+          hidden: { opacity: 0, y: 50 },
+          visible: { opacity: 1, y: 0 },
+        }}
+        transition={{ duration: 0.6, ease: "easeOut" }}
+        className="lg:mt-[170px]  mt-[120px] p-[8px] lg:p-0 lg:ml-[150px] lg:mr-[150px]"
+      >
         <h2
           className="text-white text-4xl font-bold relative inline-block mb-3 font-[Inconsolata]"
           id="project-overview"
@@ -26,7 +54,7 @@ export default function tomattsAdmin() {
           orders, reservations revenue, canceled orders, new users, mark order
           as delivered.
         </p>
-        <div className="grid grid-cols-3 text-start lg:gap-3 gap-[50%] w-[50%] mt-[40px] text-white font-[Inconsolata] text-[20px]">
+        <div className="grid grid-cols-3 text-start lg:gap-3 gap-50 w-[50%] mt-[40px] text-white font-[Inconsolata] text-[20px]">
           <div className="font-[Inconsolata]">
             <h3 className="font-bold">FEATURES</h3>
             <ul className="mt-3 text-[19px]">
@@ -285,7 +313,7 @@ export default function tomattsAdmin() {
             </div>
           </div>
         </div>
-      </div>
+      </motion.div>
       <Contact id="contact" />
       <Footer />
     </>
