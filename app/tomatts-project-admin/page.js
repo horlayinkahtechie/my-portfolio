@@ -17,7 +17,7 @@ import { motion, useAnimation } from "framer-motion";
 import { useEffect } from "react";
 import { useInView } from "react-intersection-observer";
 
-export default function tomattsAdmin() {
+export default function TomattsAdmin() {
   const controls = useAnimation();
   const [ref, inView] = useInView({ threshold: 0.2 });
 

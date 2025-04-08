@@ -1,9 +1,8 @@
 "use client";
 import { motion, useAnimation } from "framer-motion";
-import { useEffect } from "react";
 import { useInView } from "react-intersection-observer";
 
-import { useRef, useState } from "react";
+import { useRef, useState, useEffect } from "react";
 import emailjs from "emailjs-com";
 
 export default function Contact() {
