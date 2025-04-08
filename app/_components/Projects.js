@@ -69,7 +69,7 @@ export default function Projects() {
             href="/tomatts-project"
             target="_blank"
           >
-            View Project {""}
+            Read more {""}
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width="30"
@@ -107,7 +107,7 @@ export default function Projects() {
             href="/tomatts-project-admin"
             target="_blank"
           >
-            View Project {""}
+            Read more {""}
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width="30"
@@ -116,7 +116,7 @@ export default function Projects() {
               viewBox="0 0 16 16"
             >
               <path
-                fillRule="evenodd"
+                fillrule="evenodd"
                 d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8"
               />
             </svg>
@@ -141,7 +141,7 @@ export default function Projects() {
           </p>
           <Link
             className="text-white text-[25px] flex gap-5 font-[Inconsolata] hover:text-blue-400"
-            href="#/the-wild-oasis"
+            href="https://the-wild-oasis-web-black.vercel.app/"
             target="_blank"
           >
             View Project {""}
@@ -153,7 +153,7 @@ export default function Projects() {
               viewBox="0 0 16 16"
             >
               <path
-                fillRule="evenodd"
+                fillrule="evenodd"
                 d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8"
               />
             </svg>
@@ -180,7 +180,7 @@ export default function Projects() {
             href="/voting-system-project"
             target="_blank"
           >
-            View Project {""}
+            Read more {""}
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width="30"
@@ -189,7 +189,7 @@ export default function Projects() {
               viewBox="0 0 16 16"
             >
               <path
-                fillRule="evenodd"
+                fillrule="evenodd"
                 d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8"
               />
             </svg>
@@ -208,14 +208,14 @@ export default function Projects() {
             UNIZIK Alumni Website
           </h3>
           <p className="mt-4 text-white font-bold text-[19px] lg:text-[20px] lg:tracking-tight tracking-wide mb-[30px] leading-[36px]">
-            I designed a user-friendly and responsive Alumni website for a Yaba
-            College of Technology student for their final year project. You can
-            read more in the project report.
+            I designed a user-friendly and responsive UNIZIK Alumni website for
+            a Yaba College of Technology student for their final year project.
+            You can read more in the project report.
           </p>
           <div className="grid grid-cols-1 lg:grid-cols-2">
             <Link
               className="text-white text-[25px] flex gap-5 font-[Inconsolata] hover:text-blue-400"
-              href="#/unizik-alumni"
+              href="https://lustrous-crisp-1be53a.netlify.app"
               target="_blank"
             >
               View Project {""}
@@ -227,7 +227,7 @@ export default function Projects() {
                 viewBox="0 0 16 16"
               >
                 <path
-                  fillRule="evenodd"
+                  fillrule="evenodd"
                   d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8"
                 />
               </svg>
@@ -246,7 +246,7 @@ export default function Projects() {
                 viewBox="0 0 16 16"
               >
                 <path
-                  fillRule="evenodd"
+                  fillrule="evenodd"
                   d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8"
                 />
               </svg>
@@ -275,7 +275,7 @@ export default function Projects() {
           <div className="grid grid-cols-1 lg:grid-cols-2">
             <Link
               className="text-white text-[25px] flex gap-5 font-[Inconsolata] hover:text-blue-400"
-              href="#"
+              href="https://sprightly-sprinkles-7b74b9.netlify.app"
               target="_blank"
             >
               View Project {""}
@@ -287,7 +287,7 @@ export default function Projects() {
                 viewBox="0 0 16 16"
               >
                 <path
-                  fillRule="evenodd"
+                  fillrule="evenodd"
                   d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8"
                 />
               </svg>
@@ -306,7 +306,7 @@ export default function Projects() {
                 viewBox="0 0 16 16"
               >
                 <path
-                  fillRule="evenodd"
+                  fillrule="evenodd"
                   d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8"
                 />
               </svg>

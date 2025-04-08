@@ -97,42 +97,46 @@ export default function ProjectNav() {
         <ul className="mt-10 space-y-4">
           <li>
             <Link
-              to="home"
+              to="project-overview"
               smooth={true}
               duration={500}
-              className="block p-2 text-lg text-white hover:bg-gray-700 rounded"
+              // aria-current="page"
+              className="text-white text-[1.1rem] hover:text-gray-300 active cursor-pointer"
             >
-              Home
+              Project Overview
             </Link>
           </li>
           <li>
             <Link
-              to="about-me"
+              to="project-details"
               smooth={true}
               duration={500}
-              className="block p-2 text-lg text-white hover:bg-gray-700 rounded"
+              aria-current="page"
+              className="text-white text-[1.1rem] hover:text-gray-300 active cursor-pointer"
             >
-              About me
+              About Project
             </Link>
           </li>
           <li>
             <Link
-              to="my-skills"
+              to="other-projects"
               smooth={true}
               duration={500}
-              className="block p-2 text-lg text-white hover:bg-gray-700 rounded"
+              aria-current="page"
+              className="text-white text-[1.1rem] hover:text-gray-300 active cursor-pointer"
             >
-              Skills
+              Other Projects
             </Link>
           </li>
           <li>
             <Link
-              to="my-projects"
+              to="screenshots"
               smooth={true}
               duration={500}
-              className="block p-2 text-lg text-white hover:bg-gray-700 rounded"
+              aria-current="page"
+              className="text-white text-[1.1rem] hover:text-gray-300 active cursor-pointer"
             >
-              Projects
+              Screenshots
             </Link>
           </li>
           <li>
