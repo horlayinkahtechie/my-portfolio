@@ -14,7 +14,7 @@ export const metadata = {
 
 export default function Home() {
   return (
-    <div className="bg-gray-900 overflow-hidden">
+    <div className="bg-gray-900">
       <Navbar />
       <Carousel />
       <AboutMe />

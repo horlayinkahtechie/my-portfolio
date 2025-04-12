@@ -26,7 +26,7 @@ export default function Carousel() {
       }}
       transition={{ duration: 0.6, ease: "easeOut" }}
       id="home"
-      className="grid grid-cols-1 sm:grid-cols-1 lg:grid-cols-2 gap-6 lg:pt-[300px] mt-[200px] lg:mt-[0px] ml-[10px] mr-[10px] mb-[50px] lg:ml-[150px] lg:mr-[150px] min-h-[60vh] h-screen"
+      className="grid grid-cols-1 sm:grid-cols-1 lg:grid-cols-2 gap-6 lg:pt-[300px] pt-[150px] lg:mt-[0px] ml-[10px] mr-[10px] mb-[50px] lg:ml-[150px] lg:mr-[150px] min-h-[60vh] h-screen"
     >
       <div className="font-[Inconsolata] text-[33px] text-center lg:text-start lg:text-[3rem] font-bold text-white w-[100%]">
         <h3 className="lg:leading-[60px] leading-[40px]">

@@ -8,6 +8,7 @@ export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
+    // <nav className="fixed top-0 left-0 w-full text-white bg-gray-900 p-6 z-50">
     <nav className="fixed top-0 left-0 w-full text-white bg-gray-900 p-6 z-50">
       <div className="flex justify-between items-center max-w-6xl mx-auto lg:p-4 p-2">
         <Link to="home" smooth={true} duration={500} className="cursor-pointer">

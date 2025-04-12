@@ -34,7 +34,7 @@ export default function Projects() {
       }}
       transition={{ duration: 0.6, ease: "easeOut" }}
       id="my-projects"
-      className="lg:mt-[300px]  mt-[180px] p-[15px] lg:p-0  lg:ml-[150px] lg:mr-[150px]"
+      className="lg:pt-[300px] pt-[150px] p-[15px] lg:p-0  lg:ml-[150px] lg:mr-[150px]"
     >
       <h2 className="text-white text-4xl font-bold relative inline-block mb-3">
         What I&apos;ve been working on
@@ -141,7 +141,7 @@ export default function Projects() {
           </p>
           <Link
             className="text-white text-[25px] flex gap-5 font-[Inconsolata] hover:text-blue-400"
-            href="https://the-wild-oasis-web-black.vercel.app/"
+            href="/the-wild-oasis-project"
             target="_blank"
           >
             View Project {""}

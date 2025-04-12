@@ -36,17 +36,15 @@ export default function SavourProject() {
           visible: { opacity: 1, y: 0 },
         }}
         transition={{ duration: 0.6, ease: "easeOut" }}
-        className="lg:mt-[170px]  mt-[120px] p-[8px] lg:p-0 lg:ml-[150px] lg:mr-[150px]"
+        id="project-overview"
+        className="lg:pt-[200px] pt-[100px] p-[15px] lg:p-0 lg:ml-[150px] lg:mr-[150px]"
       >
-        <h2
-          className="text-white text-4xl font-bold relative inline-block mb-3 font-[Inconsolata]"
-          id="project-overview"
-        >
+        <h2 className="text-white text-4xl font-bold relative inline-block mb-3 font-[Inconsolata]">
           Restaurant Ordering and Reservation System (React + Admin Panel)
           <span className="absolute left-0 bottom-[-6px] w-[100%] h-2 bg-gradient-to-r from-blue-500 to-blue-700 transform -skew-x-12"></span>
         </h2>
         <p className="w-[100%] lg:w-[70%] text-white mt-5 leading-[35px] text-[19px] lg:text-[20px] lg:tracking-tight tracking-wide">
-          Savor is a responsive and user-friendly restaurant ordering and
+          Tomatts is a responsive and user-friendly restaurant ordering and
           reservation system using React. Customers can easily browse through
           categorized meals and drinks, place orders, and reserve seats through
           a step-by-step booking process.
@@ -101,7 +99,23 @@ export default function SavourProject() {
                 </svg>
                 CSS
               </li>
-              <li>Bootstrap</li>
+              <li className="flex gap-2">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  height="30px"
+                  width="30px"
+                  role="img"
+                  fill="currentColor"
+                  strokeWidth="0"
+                  className="bi bi-bootstrap-fill text-[40px] mb-[18px] mt-1"
+                  viewBox="0 0 24 24"
+                >
+                  <title></title>
+                  <path d="M6.375 7.125V4.658h1.78c.973 0 1.542.457 1.542 1.237 0 .802-.604 1.23-1.764 1.23zm0 3.762h1.898c1.184 0 1.81-.48 1.81-1.377 0-.885-.65-1.348-1.886-1.348H6.375z" />
+                  <path d="M4.002 0a4 4 0 0 0-4 4v8a4 4 0 0 0 4 4h8a4 4 0 0 0 4-4V4a4 4 0 0 0-4-4zm1.06 12V3.545h3.399c1.587 0 2.543.809 2.543 2.11 0 .884-.65 1.675-1.483 1.816v.1c1.143.117 1.904.931 1.904 2.033 0 1.488-1.084 2.396-2.888 2.396z" />
+                </svg>
+                Bootstrap
+              </li>
               <li className="flex gap-2">
                 <svg
                   className="text-[40px] mb-[20px]"
@@ -185,7 +199,7 @@ export default function SavourProject() {
         </div>
 
         <div
-          className="grid grid-cols-1 lg:grid-cols-2 mt-[100px] text-white"
+          className="grid grid-cols-1 lg:grid-cols-2 mt-[100px] text-white lg:pt-[200px] pt-[100px]"
           id="project-details"
         >
           <div className="p-6">

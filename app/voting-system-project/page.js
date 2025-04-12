@@ -32,11 +32,19 @@ export default function VotingSystemProject() {
   return (
     <>
       <ProjectNav />
-      <div className="lg:mt-[170px]  mt-[120px] p-[8px] lg:p-0 lg:ml-[150px] lg:mr-[150px]">
-        <h2
-          className="text-white text-4xl font-bold relative inline-block mb-3 font-[Inconsolata]"
-          id="project-overview"
-        >
+      <motion.div
+        ref={ref}
+        initial=""
+        animate={controls}
+        variants={{
+          hidden: { opacity: 0, y: 50 },
+          visible: { opacity: 1, y: 0 },
+        }}
+        transition={{ duration: 0.6, ease: "easeOut" }}
+        id="project-overview"
+        className="lg:pt-[200px] pt-[100px] p-[15px] lg:p-0 lg:ml-[150px] lg:mr-[150px]"
+      >
+        <h2 className="text-white text-4xl font-bold relative inline-block mb-3 font-[Inconsolata]">
           Presidential Voting system
           <span className="absolute left-0 bottom-[-6px] w-[100%] h-2 bg-gradient-to-r from-blue-500 to-blue-700 transform -skew-x-12"></span>
         </h2>
@@ -165,18 +173,10 @@ export default function VotingSystemProject() {
         />
 
         <div
-          ref={ref}
-          initial="hidden"
-          animate={controls}
-          variants={{
-            hidden: { opacity: 0, y: 50 },
-            visible: { opacity: 1, y: 0 },
-          }}
-          transition={{ duration: 0.6, ease: "easeOut" }}
-          className="grid grid-cols-1 lg:grid-cols-2 mt-[100px] text-white"
+          className="grid grid-cols-1 lg:grid-cols-1 w-[100%] mt-[100px] text-white lg:pt-[200px] pt-[100px]"
           id="project-details"
         >
-          <div className="p-6">
+          <div className="lg:p-6 p-2">
             <h3 className="font-[Inconsolata] text-[35px] font-bold mb-7">
               Explanation of Technology used
             </h3>
@@ -207,7 +207,7 @@ export default function VotingSystemProject() {
             </p>
           </div>
 
-          <div className="p-6">
+          <div className="lg:p-6 p-2">
             <h3 className="font-[Inconsolata] text-[35px] font-bold mb-7">
               Project Purpose and Goal
             </h3>
@@ -260,7 +260,7 @@ export default function VotingSystemProject() {
         </div>
 
         <div
-          className="grid grid-cols-1 lg:grid-cols-2 w-[100%] mt-[100px]"
+          className="grid grid-cols-1 lg:grid-cols-2 w-[100%] mt-[100px] lg:pt-[100px] pt-[20px]"
           id="screenshots"
         >
           <Image
@@ -268,38 +268,32 @@ export default function VotingSystemProject() {
             alt="Voting system screenshot"
             placeholder="blur"
             className="p-10"
+            quality={70}
           />
           <Image
             src={votinPage1}
             alt="Voting system screenshot"
             placeholder="blur"
             className="p-10"
+            quality={70}
           />
           <Image
             src={votingPage2}
             alt="Voting system screenshot"
             placeholder="blur"
             className="p-10"
+            quality={70}
           />
           <Image
             src={votingPage3}
             alt="Voting system screenshot"
             placeholder="blur"
             className="p-10"
+            quality={70}
           />
         </div>
 
-        <div
-          ref={ref}
-          initial="hidden"
-          animate={controls}
-          variants={{
-            hidden: { opacity: 0, y: 50 },
-            visible: { opacity: 1, y: 0 },
-          }}
-          transition={{ duration: 0.6, ease: "easeOut" }}
-          className="grid grid-cols-1 lg:grid-cols-1 w-[100%] mt-[100px] text-white"
-        >
+        <div className="grid grid-cols-1 lg:grid-cols-1 w-[100%] mt-[100px] text-white">
           <div className="lg:p-6 p-2">
             <h3 className="font-[Inconsolata] text-[35px] font-bold mb-7">
               Future Updates
@@ -334,7 +328,7 @@ export default function VotingSystemProject() {
             </div>
           </div>
         </div>
-      </div>
+      </motion.div>
       <Contact id="contact" />
       <Footer />
     </>

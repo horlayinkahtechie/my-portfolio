@@ -139,16 +139,7 @@ export default function ProjectNav() {
               Screenshots
             </Link>
           </li>
-          <li>
-            <Link
-              to="certifications"
-              smooth={true}
-              duration={500}
-              className="block p-2 text-lg text-white hover:bg-gray-700 rounded"
-            >
-              Certifications
-            </Link>
-          </li>
+
           <li>
             <Link
               to="contact"
