@@ -6,6 +6,7 @@ import Link from "next/link";
 import Image from "next/image";
 import ReactCertificate from "../../public/React-certificate.jpg";
 import JavaScriptCertificate from "../../public/JavaScript certificate.jpg";
+import HTMLAndCSSCertificate from "../../public/HTML-and-CSS-certificate.jpg";
 import VideoCreationCertificate from "../../public/Video Creation and Editing certificate.jpg";
 import UXDesignFundamentals from "../../public/ux certificate.png";
 import WireFrameAndLowFidelityPrototype from "../../public/low fidelity prototype certificate.png";
@@ -51,21 +52,21 @@ export default function Certifications() {
               width={670}
               height={300}
               quality={70}
-              src={ReactCertificate}
+              src={HTMLAndCSSCertificate}
               placeholder="blur"
-              alt="ReactJS, NextJs, Supabase, TailwindCSS, Redux certificate"
+              alt="HTML and CSS Certificate"
             />
             <h3 className="text-white text-[25px] lg:text-[30px] font-bold mt-[70px] font-[Inconsolata]">
-              ReactJS, NextJS, Supabase, TailwindCSS, Redux certificate
+              Complete HTML and CSS Course
             </h3>
             <p className="mt-4 text-white font-bold text-[19px] lg:text-[20px] lg:tracking-tight tracking-wide mb-[30px] leading-[36px]">
-              By completing this course, I was awarded this certificate of
-              completion. The certificate also comes with a certificate ID that
-              can be used to verify the certificate.
+              In this course, I learnt everything I need to know about Website
+              Design, from grid to flexbox, to coloring to website
+              responsiveness.
             </p>
             <Link
               className="text-white text-[25px] flex gap-5 font-[Inconsolata]"
-              href="https://www.udemy.com/certificate/UC-464d275f-751f-402b-837b-c8fa93410b46/"
+              href="https://www.udemy.com/certificate/UC-313be613-34f9-4de6-b3cf-4c57627bccfe/"
             >
               View Certificate {""}
               <svg
@@ -112,6 +113,40 @@ export default function Certifications() {
               </svg>
             </Link>
           </div>
+          <div className="lg:p-[60px] p-[0px] pt-[50px] pl-[0px]">
+            <Image
+              width={670}
+              height={300}
+              quality={70}
+              src={ReactCertificate}
+              placeholder="blur"
+              alt="ReactJS, NextJs, Supabase, TailwindCSS, Redux certificate"
+            />
+            <h3 className="text-white text-[25px] lg:text-[30px] font-bold mt-[70px] font-[Inconsolata]">
+              ReactJS, NextJS, Supabase, TailwindCSS, Redux certificate
+            </h3>
+            <p className="mt-4 text-white font-bold text-[19px] lg:text-[20px] lg:tracking-tight tracking-wide mb-[30px] leading-[36px]">
+              By completing this course, I was awarded this certificate of
+              completion. The certificate also comes with a certificate ID that
+              can be used to verify the certificate.
+            </p>
+            <Link
+              className="text-white text-[25px] flex gap-5 font-[Inconsolata]"
+              href="https://www.udemy.com/certificate/UC-464d275f-751f-402b-837b-c8fa93410b46/"
+            >
+              View Certificate {""}
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="30"
+                fill="currentColor"
+                className="bi bi-arrow-right"
+                viewBox="0 0 16 16"
+              >
+                <path d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8" />
+              </svg>
+            </Link>
+          </div>
+
           <div className="lg:p-[60px] p-[0px] pt-[50px] pl-[0px]">
             <Image
               width={670}
