@@ -22,7 +22,7 @@ export default function Certifications() {
   }, [controls, inView]);
 
   return (
-    <section id="about-me" className="scroll-mt-[200px]">
+    <section id="certifications" className="scroll-mt-[200px]">
       <motion.div
         ref={ref}
         initial="hidden"
