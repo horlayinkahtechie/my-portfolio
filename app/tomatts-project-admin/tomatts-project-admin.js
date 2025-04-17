@@ -5,6 +5,8 @@ import tomatts from "../../public/projects.png";
 import AdminDashboard from "../../public/Admin-dashboard.png";
 import adminOrdersPage from "../../public/admin-orders-page.png";
 import AdminCanceledOrdersPage from "../../public/admin-canceled-order.png";
+import AdminReservationsPage from "../../public/admin_reservations_page.png";
+
 import Footer from "../_components/Footer";
 import Contact from "../_components/Contact";
 import ProjectNav from "../_components/ProjectNav";
@@ -256,6 +258,12 @@ export default function TomattsAdmin() {
           <Image
             src={AdminCanceledOrdersPage}
             alt="Admin Canceled orders page"
+            placeholder="blur"
+            className="p-10"
+          />
+          <Image
+            src={AdminReservationsPage}
+            alt="Admin Seat Reservations page"
             placeholder="blur"
             className="p-10"
           />
