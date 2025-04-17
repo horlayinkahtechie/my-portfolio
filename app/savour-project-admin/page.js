@@ -1,4 +1,4 @@
-import TomattsAdmin from "./tomatts-project-admin";
+import TomattsAdmin from "./savour-project-admin";
 
 export const metadata = {
   title: "Tomats Admin Project - Restaurant Ordering and Reservaion system",

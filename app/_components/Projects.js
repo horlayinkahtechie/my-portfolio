@@ -66,7 +66,7 @@ export default function Projects() {
           </p>
           <Link
             className="text-white text-[22px] lg:text-[25px] flex gap-5 font-[Inconsolata] hover:text-blue-400"
-            href="/tomatts-project"
+            href="/savour-project"
             target="_blank"
           >
             Read more {""}
@@ -104,7 +104,7 @@ export default function Projects() {
           </p>
           <Link
             className="text-white text-[22px] lg:text-[25px] flex gap-5 font-[Inconsolata] hover:text-blue-400"
-            href="/tomatts-project-admin"
+            href="/savour-project-admin"
             target="_blank"
           >
             Read more {""}
@@ -141,7 +141,7 @@ export default function Projects() {
             href="/the-wild-oasis-project"
             target="_blank"
           >
-            View Project {""}
+            Read More {""}
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width="30"

@@ -15,7 +15,7 @@ import { motion, useAnimation } from "framer-motion";
 import { useEffect } from "react";
 import { useInView } from "react-intersection-observer";
 
-export default function TomattsAdmin() {
+export default function SavourAdmin() {
   const controls = useAnimation();
   const [ref, inView] = useInView({ threshold: 0.2 });
 
@@ -41,11 +41,11 @@ export default function TomattsAdmin() {
         className="lg:pt-[200px] pt-[100px] p-[15px] lg:p-0 lg:ml-[150px] lg:mr-[150px]"
       >
         <h2 className="text-white text-4xl font-bold relative inline-block mb-3 font-[Inconsolata]">
-          Tomatts Restaurant Ordering and Reservation Administrator
+          Savour Restaurant Ordering and Reservation Administrator
           <span className="absolute left-0 bottom-[-6px] w-[100%] h-2 bg-gradient-to-r from-blue-500 to-blue-700 transform -skew-x-12"></span>
         </h2>
         <p className="w-[100%] lg:w-[70%] text-white mt-5 leading-[35px] text-[19px] lg:text-[20px] lg:tracking-tight tracking-wide">
-          This is the admin part of the Tomatts Restaurant Ordering and
+          This is the admin part of the savour Restaurant Ordering and
           Reservation System. It enables website manager to be able track
           orders, reservations revenue, canceled orders, new users, mark order
           as delivered.
@@ -184,7 +184,7 @@ export default function TomattsAdmin() {
         <div className="grid grid-cols-1 mt-[100px]">
           <Image
             src={tomatts}
-            alt="Tomatts Restaurant Ordering and Reservation system"
+            alt="Savour Restaurant Ordering and Reservation system"
           />
         </div>
 

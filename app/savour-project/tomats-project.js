@@ -14,6 +14,7 @@ import menuSearchImg from "../../public/menu-search-img.png";
 import cartItemImg from "../../public/cart-item-img.png";
 import checkoutWithPaystack from "../../public/checkout-with-paystack.png";
 import paymentStatusImg from "../../public/payment-status-img.png";
+import reservationImg from "../../public/reservation_page.png";
 
 export default function SavourProject() {
   const controls = useAnimation();
@@ -45,7 +46,7 @@ export default function SavourProject() {
           <span className="absolute left-0 bottom-[-6px] w-[100%] h-2 bg-gradient-to-r from-blue-500 to-blue-700 transform -skew-x-12"></span>
         </h2>
         <p className="w-[100%] lg:w-[70%] text-white mt-5 leading-[35px] text-[19px] lg:text-[20px] lg:tracking-tight tracking-wide">
-          Tomatts is a responsive and user-friendly restaurant ordering and
+          Savour is a responsive and user-friendly restaurant ordering and
           reservation system using React. Customers can easily browse through
           categorized meals and drinks, place orders, and reserve seats through
           a step-by-step booking process.
@@ -170,6 +171,7 @@ export default function SavourProject() {
                 Supabase
               </li>
               <li>Netlify</li>
+              <li>EmailJS</li>
             </ul>
           </div>
           <div>
@@ -195,7 +197,7 @@ export default function SavourProject() {
         <div className="grid grid-cols-1 mt-[100px]">
           <Image
             src={tomatts}
-            alt="Tomatts Restaurant Ordering and Reservation system screenshot"
+            alt="Savour Restaurant Ordering and Reservation system screenshot"
             placeholder="blur"
             quality={70}
           />
@@ -244,7 +246,7 @@ export default function SavourProject() {
               Project Purpose and Goal
             </h3>
             <p className="text-[20px] leading-8 mb-8 font-[200px]">
-              The purpose of the tomatts restaurant ordering and reservation
+              The purpose of the savour restaurant ordering and reservation
               system is to simplify and modernize how customers interact with a
               restaurant by offering a seamless digital platform. It enables
               users to easily browse the menu, place orders, and reserve seats
@@ -302,6 +304,16 @@ export default function SavourProject() {
           <Image
             src={menuSearchImg}
             alt="."
+            placeholder="blur"
+            quality={70}
+            className="p-10"
+          />
+        </div>
+
+        <div className="grid grid-cols-1 w-[100%]">
+          <Image
+            src={reservationImg}
+            alt="Screenshot of the reservation page"
             placeholder="blur"
             quality={70}
             className="p-10"
