@@ -141,7 +141,22 @@ export default function VotingSystemProject() {
                 </svg>
                 Supabase
               </li>
-              <li>Netlify</li>
+              <li className="flex gap-2">
+                <svg
+                  className="text-[40px] mb-[20px]"
+                  stroke="currentColor"
+                  fill="currentColor"
+                  strokeWidth="0"
+                  role="img"
+                  viewBox="0 0 512 512"
+                  height="24px"
+                  width="24px"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path d="M256 0L512 256L256 512L0 256L256 0ZM117.3 288L256 149.3L394.7 288L256 426.7L117.3 288Z" />
+                </svg>
+                Netlify
+              </li>
             </ul>
           </div>
           <div>

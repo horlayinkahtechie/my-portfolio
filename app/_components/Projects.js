@@ -8,7 +8,7 @@ import Image from "next/image";
 import RestaurantReservationSystem from "../../public/Admin-dashboard.png";
 import TheWildOasis from "../../public/the-wild-oasis.png";
 import presidentialVotingSystem from "../../public/presidential-voting-system.png";
-import savor from "../../public/Savor.png";
+import savor from "../../public/Savour.png";
 import UNIZIK from "../../public/UNIZIK.png";
 import translationApp from "../../public/translateapp.png";
 

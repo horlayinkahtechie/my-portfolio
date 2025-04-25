@@ -1,7 +1,7 @@
 "use client";
 import Link from "next/link";
 import Image from "next/image";
-import tomatts from "../../public/Savor.png";
+import tomatts from "../../public/Savour.png";
 import Contact from "../_components/Contact";
 import Footer from "../_components/Footer";
 import ProjectNav from "../_components/ProjectNav";
@@ -170,8 +170,39 @@ export default function SavourProject() {
                 </svg>
                 Supabase
               </li>
-              <li>Netlify</li>
-              <li>EmailJS</li>
+              <li className="flex gap-2">
+                <svg
+                  className="text-[40px] mb-[20px]"
+                  stroke="currentColor"
+                  fill="currentColor"
+                  strokeWidth="0"
+                  role="img"
+                  viewBox="0 0 512 512"
+                  height="24px"
+                  width="24px"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path d="M256 0L512 256L256 512L0 256L256 0ZM117.3 288L256 149.3L394.7 288L256 426.7L117.3 288Z" />
+                </svg>
+                Netlify
+              </li>
+
+              <li className="flex gap-2">
+                <svg
+                  className="text-[40px] mb-[20px]"
+                  stroke="currentColor"
+                  fill="currentColor"
+                  strokeWidth="0"
+                  viewBox="0 0 24 24"
+                  height="24px"
+                  width="24px"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path d="M20 4H4C2.897 4 2.01 4.897 2.01 6L2 18c0 1.103.897 2 2 2h16c1.103 0 2-.897 2-2V6c0-1.103-.897-2-2-2zM4 8l8 5 8-5v-.002L12 13 4 8V8z" />
+                  <path d="M13 10h2l-2 4h2l-3 6v-5H9l2-5z" />
+                </svg>
+                EmailJS
+              </li>
             </ul>
           </div>
           <div>
