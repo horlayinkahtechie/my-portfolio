@@ -73,6 +73,14 @@ export default function Navbar() {
           >
             Contacts
           </Link>
+
+          <Link
+            href="ALAO ABDUL-SALAM CV.docx"
+            target="_blank"
+            className="text-white text-[1.1rem] hover:text-gray-300 active cursor-pointer"
+          >
+            Download Resume
+          </Link>
         </div>
 
         {/* Mobile Menu Toggle */}
@@ -162,6 +170,15 @@ export default function Navbar() {
               className="block p-2 text-lg text-white hover:bg-gray-700 rounded"
             >
               Contact
+            </Link>
+          </li>
+          <li>
+            <Link
+              href="ALAO ABDUL-SALAM CV.docx"
+              target="_blank"
+              className="block p-2 text-lg text-white hover:bg-gray-700 rounded"
+            >
+              Download Resume
             </Link>
           </li>
         </ul>

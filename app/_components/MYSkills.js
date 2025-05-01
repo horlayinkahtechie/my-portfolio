@@ -290,6 +290,19 @@ export default function MySkills() {
           </svg>
           Git
         </div>
+        <div className="text-white pb-[35px]">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="1em"
+            height="1em"
+            viewBox="0 0 24 24"
+            fill="currentColor"
+            className="text-[40px] mb-[20px]"
+          >
+            <path d="M12 12a3 3 0 0 0 0-6h-3v6h3zm0 1.5h-3V18a3 3 0 1 0 3-4.5zm-4.5 0H6a3 3 0 0 0 0 6h1.5v-6zm0-1.5H6a3 3 0 0 1 0-6h1.5v6zm1.5-7.5H12a3 3 0 1 0 0-6h-3v6z" />
+          </svg>
+          Figma
+        </div>
       </div>
     </motion.div>
   );

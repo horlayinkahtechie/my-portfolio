@@ -8,6 +8,7 @@ import Image from "next/image";
 import RestaurantReservationSystem from "../../public/Admin-dashboard.png";
 import TheWildOasis from "../../public/the-wild-oasis.png";
 import presidentialVotingSystem from "../../public/presidential-voting-system.png";
+import booknesthero from "../../public/booknesthero.png";
 import savor from "../../public/Savour.png";
 import UNIZIK from "../../public/UNIZIK.png";
 import translationApp from "../../public/translateapp.png";
@@ -47,6 +48,42 @@ export default function Projects() {
       </p>
 
       <div className="grid grid-cols-1 lg:grid-cols-2 mt-[40px]">
+        <div className="p-4">
+          <Image
+            width={670}
+            height={300}
+            quality={70}
+            src={booknesthero}
+            placeholder="blur"
+            alt="Savor Restaurant Ordering and Reservation System with an Administrator"
+          />
+          <h3 className="text-white text-[25px] lg:text-[30px] font-bold mt-[70px] font-[Inconsolata]">
+            BookNest
+          </h3>
+          <p className="mt-4 text-white font-bold text-[19px] lg:text-[20px] lg:tracking-tight tracking-wide mb-[30px] leading-[36px]">
+            BookNest is an online hotel booking system where users can book a
+            room from their device a day or two prior to the day of arrival.
+          </p>
+          <Link
+            className="text-white text-[22px] lg:text-[25px] flex gap-5 font-[Inconsolata] hover:text-blue-400"
+            href="/booknest-project"
+            target="_blank"
+          >
+            Read more {""}
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="30"
+              fill="currentColor"
+              className="bi bi-arrow-right"
+              viewBox="0 0 16 16"
+            >
+              <path
+                fileRule="evenodd"
+                d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8"
+              />
+            </svg>
+          </Link>
+        </div>
         <div className="p-4">
           <Image
             width={670}
