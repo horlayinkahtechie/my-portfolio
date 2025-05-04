@@ -205,7 +205,7 @@ export default function BookNestProject() {
             <h3 className="font-bold">LINK</h3>
             <ul className="mt-3 text-[19px]">
               <li className="text-blue-500">
-                <Link href="#" target="_default">
+                <Link href="https://booknnest.netlify.app" target="_default">
                   Live Preview
                 </Link>
               </li>
