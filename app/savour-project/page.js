@@ -1,7 +1,7 @@
 export const metadata = {
   title: "Tomatts Project - Restaurant Ordering and Reservation system",
   description:
-    "More about the tomatts project I built with ReactJS and Supabase.",
+    "Tomatts is a restaurant reservation and ordering system with payment integration. More about the tomatts project and the tech stack used.",
 };
 
 import TomattsProject from "./tomats-project";
