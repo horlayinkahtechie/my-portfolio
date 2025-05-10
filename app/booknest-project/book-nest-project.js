@@ -2,10 +2,12 @@
 import Link from "next/link";
 import Image from "next/image";
 import booknest from "../../public/booknesthero.png";
-import booknestCheckout from "../../public/booknest_checkout.png";
-import booknestExplore from "../../public/booknest_explore.png";
+import booknestCheckout from "../../public/booknest_checkout_page.png";
+import booknestExplore from "../../public/booknest_explore_pagge.png";
 import booknestLuxuryListing from "../../public/booknest_luxury_listing.png";
 import booknestStandardListing from "../../public/booknest_standard_listing.png";
+import booknestBasicListing from "../../public/booknest_basic_listing.png";
+import booknestFooter from "../../public/booknest_footer.png";
 
 import Footer from "../_components/Footer";
 import Contact from "../_components/Contact";
@@ -58,6 +60,7 @@ export default function BookNestProject() {
               <li className="pb-2">User profile</li>
               <li className="pb-2">Room listings</li>
               <li className="pb-2">Confirm Reservation</li>
+              <li className="pb-2">Mobile Responsiveness</li>
             </ul>
           </div>
           <div>
@@ -253,7 +256,7 @@ export default function BookNestProject() {
                 <p className="text-[20px] leading-8 mb-8">
                   When a user wants to book a room, they need to log in with
                   their Google account, once they are authenticated, they fill
-                  out a form with their name, email,number of days they want to
+                  out a form with their name, email, number of days they want to
                   use, check in and check out dates, and payment methods.The
                   system then calculates the total cost based on the number of
                   nights and the room&apos;s price.
@@ -294,6 +297,12 @@ export default function BookNestProject() {
             className="p-10"
           />
           <Image
+            src={booknestBasicListing}
+            alt="Booknest basic listing"
+            placeholder="blur"
+            className="p-10"
+          />
+          <Image
             src={booknestStandardListing}
             alt="Booknest standard listing"
             placeholder="blur"
@@ -302,6 +311,12 @@ export default function BookNestProject() {
           <Image
             src={booknestLuxuryListing}
             alt="Booknest luxury listing"
+            placeholder="blur"
+            className="p-10"
+          />
+          <Image
+            src={booknestFooter}
+            alt="Booknest Footer"
             placeholder="blur"
             className="p-10"
           />
