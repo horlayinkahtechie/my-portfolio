@@ -63,6 +63,8 @@ export default function Projects() {
           <p className="mt-4 text-white font-bold text-[19px] lg:text-[20px] lg:tracking-tight tracking-wide mb-[30px] leading-[36px]">
             BookNest is an online hotel booking system where users can book a
             room from their device a day or two prior to the day of arrival.
+            Booknest is a responsive, user-friendly and well detailed hotel
+            website and booking system.
           </p>
           <Link
             className="text-white text-[22px] lg:text-[25px] flex gap-5 font-[Inconsolata] hover:text-blue-400"
