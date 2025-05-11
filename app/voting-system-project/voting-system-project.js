@@ -30,7 +30,7 @@ export default function VotingSystemProject() {
   }, [controls, inView]);
 
   return (
-    <>
+    <main>
       <ProjectNav />
       <motion.div
         ref={ref}
@@ -346,6 +346,6 @@ export default function VotingSystemProject() {
       </motion.div>
       <Contact id="contact" />
       <Footer />
-    </>
+    </main>
   );
 }

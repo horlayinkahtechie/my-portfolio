@@ -27,7 +27,7 @@ export default function SavourProject() {
   }, [controls, inView]);
 
   return (
-    <>
+    <main>
       <ProjectNav />
       <motion.div
         ref={ref}
@@ -353,6 +353,6 @@ export default function SavourProject() {
       </motion.div>
       <Contact id="contact" />
       <Footer />
-    </>
+    </main>
   );
 }

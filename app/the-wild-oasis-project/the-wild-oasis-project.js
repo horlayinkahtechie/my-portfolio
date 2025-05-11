@@ -27,7 +27,7 @@ export default function TheWildOasisProject() {
   }, [controls, inView]);
 
   return (
-    <>
+    <main>
       <ProjectNav />
       <motion.div
         ref={ref}
@@ -359,6 +359,6 @@ export default function TheWildOasisProject() {
       </motion.div>
       <Contact id="contact" />
       <Footer />
-    </>
+    </main>
   );
 }

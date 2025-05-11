@@ -28,7 +28,7 @@ export default function BookNestProject() {
   }, [controls, inView]);
 
   return (
-    <>
+    <main>
       <ProjectNav />
       <motion.div
         ref={ref}
@@ -324,6 +324,6 @@ export default function BookNestProject() {
       </motion.div>
       <Contact id="contact" />
       <Footer />
-    </>
+    </main>
   );
 }

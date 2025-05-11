@@ -26,7 +26,7 @@ export default function SavourAdmin() {
   }, [controls, inView]);
 
   return (
-    <>
+    <main>
       <ProjectNav />
       <motion.div
         ref={ref}
@@ -351,6 +351,6 @@ export default function SavourAdmin() {
       </motion.div>
       <Contact id="contact" />
       <Footer />
-    </>
+    </main>
   );
 }

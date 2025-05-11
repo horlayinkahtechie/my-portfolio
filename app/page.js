@@ -9,21 +9,67 @@ import Footer from "./_components/Footer";
 export const metadata = {
   title: "Alao Abdul-salam Olayinka | Frontend Developer",
   description:
-    "A Frontend Developer with experience in React, NextJS, TailwindCSS and much more. See my projects and get in touch.",
+    "Welcome to my portfolio! I'm Abdul-salam, a passionate Frontend Developer skilled in React, Next.js, TailwindCSS, and more. View my projects and get in touch.",
+  keywords: [
+    "Frontend Developer",
+    "React Developer",
+    "Next.js Portfolio",
+    "TailwindCSS",
+    "Web Developer Nigeria",
+    "Web Developer in Nigeria",
+    "Alao Abdul-salam",
+    "Abdul-salam Olayinka",
+    "JavaScript Developer",
+    "Software Engineer Portfolio",
+    "NextJS Developer",
+    "React Developer",
+    "Frontend Developer in Nigeria",
+  ],
+  authors: [
+    { name: "Alao Abdul-salam Olayinka", url: "https://abdulsalamalao.com" },
+  ],
+  creator: "Alao Abdul-salam Olayinka",
+  publisher: "Alao Abdul-salam Olayinka",
+  metadataBase: new URL("https://abdulsalamalao.com"),
   openGraph: {
-    title: "Alao Abdul-salam Olayinka| Frontend Developer",
+    title: "Alao Abdul-salam Olayinka | Frontend Developer",
     description:
-      "Experienced Frontend Developer. Explore my portfolio and web development projects.",
-    // images: ['/og-image.jpg'],
-    type: "website",
+      "Explore my web development projects built with React, Next.js and more.",
     url: "https://abdulsalamalao.com",
+    siteName: "Alao Abdul-salam Portfolio",
+    // images: [
+    //   {
+    //     url: "/og-image.jpg",
+    //     width: 1200,
+    //     height: 630,
+    //     alt: "Alao Abdul-salam Portfolio OG Image",
+    //   },
+    // ],
+    locale: "en_US",
+    type: "website",
   },
   twitter: {
     card: "summary_large_image",
     title: "Alao Abdul-salam Olayinka | Frontend Developer",
-    description:
-      "Experienced Frontend Developer. Explore my portfolio and web development projects.",
-    // images: ['/og-image.jpg'],
+    description: "Check out my projects built with NextJS, React, and more.",
+    // images: ["/og-image.jpg"],
+    creator: "@dev_olayinka",
+  },
+  robots: {
+    index: true,
+    follow: true,
+    nocache: false,
+    googleBot: {
+      index: true,
+      follow: true,
+      noimageindex: false,
+      maxVideoPreview: -1,
+      maxImagePreview: "large",
+      maxSnippet: -1,
+    },
+  },
+  alternates: {
+    canonical: "https://abdulsalamalao.com",
   },
   viewport: "width=device-width, initial-scale=1",
 };
