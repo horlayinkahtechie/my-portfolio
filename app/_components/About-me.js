@@ -45,9 +45,9 @@ export default function AboutMe() {
             </p>
             <p className="text-white mt-5 text-[19px] lg:text-[20px] lg:tracking-tight tracking-wide">
               With experience in building systems such as a restaurant ordering
-              and reservation platform and a presidential voting system,
-              I&apos;ve honed my skills in both frontend and backend
-              development. I pay attention to clean design, smooth user
+              and reservation system, hotel booking and reservation system,
+              voting system. I&apos;ve honed my skills in both frontend and
+              backend development. I pay attention to clean design, smooth user
               experience, and performance optimization.
             </p>
 
@@ -77,6 +77,10 @@ export default function AboutMe() {
               courses and helping others grow in the tech space. I&apos;m always
               eager to learn, improve, and take on new challenges that push me
               forward.
+            </p>
+            <p className="text-white mt-5 text-[19px] lg:text-[20px] lg:tracking-tight tracking-wide">
+              Over the years, I&apos;ve had the priviledge to work on more than
+              10 project and completed more than 8 certifications.
             </p>
           </div>
         </div>

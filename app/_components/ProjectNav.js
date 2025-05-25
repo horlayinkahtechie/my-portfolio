@@ -10,7 +10,7 @@ export default function ProjectNav() {
   return (
     <nav className="fixed top-0 left-0 w-full text-white bg-gray-900 p-6 z-50">
       <div className="flex justify-between items-center max-w-6xl mx-auto lg:p-4 p-2">
-        <Link to="/" smooth={true} duration={500} className="cursor-pointer">
+        <Link to="/" className="cursor-pointer">
           <span className="lg:text-[1.8rem] text-[22px] font-bold font-[Inconsolata]">
             Alao Abdul-salam
           </span>

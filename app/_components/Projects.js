@@ -8,7 +8,7 @@ import Image from "next/image";
 import RestaurantReservationSystem from "../../public/Admin-dashboard.png";
 import TheWildOasis from "../../public/the-wild-oasis.png";
 import presidentialVotingSystem from "../../public/presidential-voting-system.png";
-import booknesthero from "../../public/booknesthero.png";
+import booknesthero from "../../public/hero.png";
 import savor from "../../public/Savour.png";
 import UNIZIK from "../../public/UNIZIK.png";
 import translationApp from "../../public/translateapp.png";
@@ -62,9 +62,9 @@ export default function Projects() {
           </h3>
           <p className="mt-4 text-white font-bold text-[19px] lg:text-[20px] lg:tracking-tight tracking-wide mb-[30px] leading-[36px]">
             BookNest is an online hotel booking system where users can book a
-            room from their device a day or two prior to the day of arrival.
-            Booknest is a responsive, user-friendly and well detailed hotel
-            website and booking system.
+            room and pay from their device a day or two prior to the day of
+            arrival. Booknest also has an integrated live chat for questions or
+            support.
           </p>
           <Link
             className="text-white text-[22px] lg:text-[25px] flex gap-5 font-[Inconsolata] hover:text-blue-400"

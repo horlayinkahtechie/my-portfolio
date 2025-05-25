@@ -1,13 +1,14 @@
 "use client";
 import Link from "next/link";
 import Image from "next/image";
-import booknest from "../../public/booknesthero.png";
-import booknestCheckout from "../../public/booknest_checkout_page.png";
-import booknestExplore from "../../public/booknest_explore_pagge.png";
-import booknestLuxuryListing from "../../public/booknest_luxury_listing.png";
-import booknestStandardListing from "../../public/booknest_standard_listing.png";
-import booknestBasicListing from "../../public/booknest_basic_listing.png";
-import booknestFooter from "../../public/booknest_footer.png";
+import booknest from "../../public/hero.png";
+import booknestHeroWithLiveChat from "../../public/hero-with-live-chat.png";
+import booknestCheckout from "../../public/booknest-checkout.png";
+import booknestAbout from "../../public/about-booknest.png";
+import booknestLuxuryListing from "../../public/luxury-listing.png";
+import booknestStandardListing from "../../public/standard-listing.png";
+import booknestBasicListing from "../../public/basic-listing.png";
+import booknestFooter from "../../public/footer.png";
 
 import Footer from "../_components/Footer";
 import Contact from "../_components/Contact";
@@ -46,9 +47,16 @@ export default function BookNestProject() {
           BookNest
           <span className="absolute left-0 bottom-[-6px] w-[100%] h-2 bg-gradient-to-r from-blue-500 to-blue-700 transform -skew-x-12"></span>
         </h2>
-        <p className="w-[100%] lg:w-[70%] text-white mt-5 leading-[35px] text-[19px] lg:text-[20px] lg:tracking-tight tracking-wide">
-          BookNest is an Hotel/Airbnb booking system that allows users to book a
-          room, from the comfort of their home few days before arival.
+        <p className="w-[100%] lg:w-[90%] text-white mt-5 leading-[35px] text-[19px] lg:text-[20px] lg:tracking-tight tracking-wide">
+          BookNest is an Hotel booking and reservation system that allows users
+          to book a room and make payment, from the comfort of their home few
+          days before arival. Booknest have features like live chat for customer
+          support, questions or feedback. Booknest also have a secured
+          administrator page that allows authorized site admin to manage what is
+          going on the site, such as updating listing price, adding listings,
+          replying to customers messages, approving payment/bookings. On the
+          Admin page, they can view total income, total users, gather user
+          emails to send promotional mail and lots more.
         </p>
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 w-full lg:w-[70%] mt-10 text-white font-[Inconsolata] text-[20px]">
@@ -57,14 +65,16 @@ export default function BookNestProject() {
             <ul className="mt-3 text-[19px]">
               <li className="pb-2">Google Authentication</li>
               <li className="pb-2">Booking system</li>
+              <li className="pb-2">Reservation System</li>
               <li className="pb-2">User profile</li>
               <li className="pb-2">Room listings</li>
-              <li className="pb-2">Confirm Reservation</li>
               <li className="pb-2">Mobile Responsiveness</li>
+              <li className="pb-2">Live chat</li>
+              <li className="pb-2">Admin Features</li>
             </ul>
           </div>
           <div>
-            <h3 className="font-bold">STACK</h3>
+            <h3 className="font-bold">TECH STACK</h3>
             <ul className="mt-3 text-[19px]">
               <li className="flex gap-2">
                 <svg
@@ -275,6 +285,15 @@ export default function BookNestProject() {
                   payment fails or the user cancels, the system shows a decline
                   page with helpful info.
                 </p>
+                <p className="text-[20px] leading-8 mb-8">
+                  When users are trying to book and they got into an issue or
+                  they want to ask a question, or they want to give a feedback,
+                  they can easily message the hotel site administrator and the
+                  hotel admin will repy shortly. The live chat has a feature
+                  that tells the user if the message has been sent, seen or not
+                  sent or the message is sending, and each message shows the
+                  time and date it was sent.
+                </p>
               </div>
             </div>
           </div>
@@ -285,7 +304,7 @@ export default function BookNestProject() {
           id="screenshots"
         >
           <Image
-            src={booknestExplore}
+            src={booknestAbout}
             alt="Booknest explore page"
             placeholder="blur"
             className="p-10"
@@ -317,6 +336,14 @@ export default function BookNestProject() {
           <Image
             src={booknestFooter}
             alt="Booknest Footer"
+            placeholder="blur"
+            className="p-10"
+          />
+        </div>
+        <div className="grid grid-cols-1 w-[100%] mt-[100px] lg:pt-[100px] pt-[20px]">
+          <Image
+            src={booknestHeroWithLiveChat}
+            alt="Booknest Hero with live chat image"
             placeholder="blur"
             className="p-10"
           />
