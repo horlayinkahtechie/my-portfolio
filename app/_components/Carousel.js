@@ -41,7 +41,7 @@ export default function Carousel() {
           I Focuses on building a user-friendly websites and web applications.
         </h3>
 
-        <div className="mt-10 flex gap-7 justify-center">
+        <div className="mt-10 flex gap-7 justify-center lg:justify-start">
           <a
             href="https://wa.me/2348169415526"
             target="_blank"
