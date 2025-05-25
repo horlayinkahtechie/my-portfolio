@@ -61,7 +61,7 @@ export default function Carousel() {
             <FaXTwitter className="hover:text-black w-9 h-9" />
           </a>
           <a
-            href="https://linkedin.com/in/yourprofile"
+            href="https://www.linkedin.com/in/abdulsalam-alao-b4217a250/"
             target="_blank"
             rel="noopener noreferrer"
             aria-label="LinkedIn"
