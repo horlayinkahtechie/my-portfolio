@@ -1,11 +1,11 @@
-// import Image from "next/image";
-// import myPicture from "../../public/My-picture.jpg";
 "use client";
 import { motion, useAnimation } from "framer-motion";
 import { useEffect } from "react";
 import { useInView } from "react-intersection-observer";
 import { FaWhatsapp, FaGithub, FaLinkedin } from "react-icons/fa";
 import { FaXTwitter } from "react-icons/fa6";
+import Image from "next/image";
+import myPicture from "../../public/Alao Abdulsalam.jpg";
 
 export default function Carousel() {
   const controls = useAnimation();
@@ -28,17 +28,18 @@ export default function Carousel() {
       }}
       transition={{ duration: 0.6, ease: "easeOut" }}
       id="home"
-      className="grid grid-cols-1 sm:grid-cols-1 lg:grid-cols-2 gap-6 lg:pt-[300px] pt-[150px] lg:mt-[0px] ml-[10px] mr-[10px] mb-[50px] lg:ml-[150px] lg:mr-[150px] min-h-[60vh] h-screen"
+      className="grid grid-cols-1 sm:grid-cols-1 lg:grid-cols-2 gap-25 lg:pt-[250px] pt-[150px] lg:mt-[0px] ml-[10px] mr-[10px] mb-[50px] lg:ml-[150px] lg:mr-[150px] min-h-[60vh] h-screen"
     >
       <div className="font-[Inconsolata] text-[33px] text-center lg:text-start lg:text-[2.8rem] font-bold text-white w-[100%]">
-        <h3 className="lg:leading-[60px] leading-[40px]">
-          Hi there, I&apos;m Abdul-salam.
+        <h3 className="lg:leading-[60px] leading-[40px] lg:text-[33px] lg:mb-[8px]">
+          Hi, I&apos;m Abdul-salam.
         </h3>
-        <span className="lg:leading-[60px]  leading-[40px]">
+        <span className="lg:leading-[60px] leading-[40px] lg:text-[65px] ">
           A FrontEnd Developer.
         </span>
-        <h3 className="lg:leading-[60px]  leading-[40px]">
-          I Focuses on building a user-friendly websites and web applications.
+        <h3 className="lg:leading-[50px] leading-[40px] lg:text-[33px] lg:mt-2">
+          I Focuses on building a user-friendly websites and web applications
+          for brands and businesses.
         </h3>
 
         <div className="mt-10 flex gap-7 justify-center lg:justify-start">
@@ -81,14 +82,15 @@ export default function Carousel() {
         </div>
       </div>
 
-      {/* <Image
+      <Image
         src={myPicture}
-        quality={70}
-        width={700}
-        height={200}
+        quality={100}
+        width={500}
+        height={100}
         placeholder="blur"
         alt="Alao Abdul-salam Olayinka"
-      /> */}
+        className="rounded-xl"
+      />
     </motion.div>
   );
 }
