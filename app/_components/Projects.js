@@ -62,9 +62,10 @@ export default function Projects() {
           </h3>
           <p className="mt-4 text-white font-bold text-[19px] lg:text-[20px] lg:tracking-tight tracking-wide mb-[30px] leading-[36px]">
             BookNest is an online hotel booking system where users can book a
-            room and pay from their device a day or two prior to the day of
-            arrival. Booknest also has an integrated live chat for questions or
-            support.
+            room and pay from their device prior to their arrival. Booknest also
+            has an integrated live chat for questions or support. Booknest also
+            have a admin management system that could only be accessed by
+            authorized staffs.
           </p>
           <Link
             className="text-white text-[22px] lg:text-[25px] flex gap-5 font-[Inconsolata] hover:text-blue-400"

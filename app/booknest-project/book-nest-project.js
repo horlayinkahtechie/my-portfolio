@@ -1,5 +1,5 @@
 "use client";
-import Link from "next/link";
+import { Link } from "react-scroll";
 import Image from "next/image";
 import booknest from "../../public/hero.png";
 import booknestHeroWithLiveChat from "../../public/hero-with-live-chat.png";
@@ -9,6 +9,12 @@ import booknestLuxuryListing from "../../public/luxury-listing.png";
 import booknestStandardListing from "../../public/standard-listing.png";
 import booknestBasicListing from "../../public/basic-listing.png";
 import booknestFooter from "../../public/footer.png";
+import dashboard from "../../public/dashboard.png";
+import messages from "../../public/messages.png";
+import bookings from "../../public/bookings.png";
+import analytics from "../../public/analytics.png";
+import profile from "../../public/profile.png";
+import users from "../../public/users.png";
 
 import Footer from "../_components/Footer";
 import Contact from "../_components/Contact";
@@ -49,14 +55,14 @@ export default function BookNestProject() {
         </h2>
         <p className="w-[100%] lg:w-[90%] text-white mt-5 leading-[35px] text-[19px] lg:text-[20px] lg:tracking-tight tracking-wide">
           BookNest is an Hotel booking and reservation system that allows users
-          to book a room and make payment, from the comfort of their home few
-          days before arival. Booknest have features like live chat for customer
-          support, questions or feedback. Booknest also have a secured
-          administrator page that allows authorized site admin to manage what is
-          going on the site, such as updating listing price, adding listings,
-          replying to customers messages, approving payment/bookings. On the
-          Admin page, they can view total income, total users, gather user
-          emails to send promotional mail and lots more.
+          to book a room and make payment, from the comfort of their home prior
+          to their arrival. Booknest also have live chat for customer support,
+          questions or feedback. Booknest also have a secured administrator page
+          that allows authorized site admin to manage what is going on the site,
+          such as updating listing price, adding listings, replying to customers
+          messages, approving payment/bookings. On the Admin page, admin can
+          view total income, total users, gather user emails to send promotional
+          mail and lots more.
         </p>
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 w-full lg:w-[70%] mt-10 text-white font-[Inconsolata] text-[20px]">
@@ -281,9 +287,9 @@ export default function BookNestProject() {
                   booking and shows an appropriate message. This ensures there
                   are no conflicts during check-in. Paystack is used for
                   payment. When the user pays: If the payment is successful, the
-                  system stores the reservation and shows a success page, If the
-                  payment fails or the user cancels, the system shows a decline
-                  page with helpful info.
+                  system stores the bookings and shows a success page, If the
+                  payment fails or the user cancels payment process, the system
+                  shows a decline page with helpful info.
                 </p>
                 <p className="text-[20px] leading-8 mb-8">
                   When users are trying to book and they got into an issue or
@@ -296,6 +302,27 @@ export default function BookNestProject() {
                 </p>
               </div>
             </div>
+            <Link
+              className="text-white underline text-[22px] lg:text-[25px] flex gap-5 cursor-pointer font-[Inconsolata] hover:text-blue-400"
+              to="admin_implementation"
+              smooth={true}
+              duration={500}
+            >
+              Read more about how the admin management system is implemented{" "}
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="30"
+                height="30"
+                fill="currentColor"
+                class="bi bi-arrow-down"
+                viewBox="0 0 16 16"
+              >
+                <path
+                  fill-rule="evenodd"
+                  d="M8 1a.5.5 0 0 1 .5.5v11.793l3.146-3.147a.5.5 0 0 1 .708.708l-4 4a.5.5 0 0 1-.708 0l-4-4a.5.5 0 0 1 .708-.708L7.5 13.293V1.5A.5.5 0 0 1 8 1"
+                />
+              </svg>
+            </Link>
           </div>
         </div>
 
@@ -347,6 +374,139 @@ export default function BookNestProject() {
             placeholder="blur"
             className="p-10"
           />
+        </div>
+
+        <Link
+          className="text-white underline text-[22px] lg:text-[25px] flex gap-5 cursor-pointer font-[Inconsolata] hover:text-blue-400"
+          to="admin_screenshots"
+          smooth={true}
+          duration={500}
+        >
+          Check the admin page screenshots{" "}
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="30"
+            height="30"
+            fill="currentColor"
+            class="bi bi-arrow-down"
+            viewBox="0 0 16 16"
+          >
+            <path
+              fill-rule="evenodd"
+              d="M8 1a.5.5 0 0 1 .5.5v11.793l3.146-3.147a.5.5 0 0 1 .708.708l-4 4a.5.5 0 0 1-.708 0l-4-4a.5.5 0 0 1 .708-.708L7.5 13.293V1.5A.5.5 0 0 1 8 1"
+            />
+          </svg>
+        </Link>
+
+        <div
+          className="grid grid-cols-1 lg:grid-cols-1 w-[100%] mt-[100px] text-white lg:pt-[200px] pt-[100px]"
+          id="admin_implementation"
+        >
+          <div className="lg:p-6 p-1">
+            <h3 className="font-[Inconsolata] text-[35px] font-bold mb-7">
+              How the Admin is implemented
+            </h3>
+            <div className="grid grid-cols-1 lg:grid-cols-2">
+              <div className="p-1">
+                <p className="text-[20px] leading-8 mb-8 font-[200px]">
+                  The hotel booking system has a built-in admin management
+                  system that an authorized staff or manager can visit to
+                  analyze what is going on in the frontend. <br></br> Admin
+                  pages are protected by a middleware that check the URL of the
+                  current page visited, if the user is an authenticated site
+                  administrator i.e the users email matches the email of the
+                  admin in the database, it will then allow to route to the
+                  admin page, if not route to unauthorized page.
+                </p>
+
+                <p className="text-[20px] leading-8 mb-8">
+                  On the admin page, there are several pages, each serving
+                  different purposes. On the Dashboard, admin can see the number
+                  of rooms available, total bookings, total reservation, total
+                  revenue, recent bookings, occupied and available room, admin
+                  can insert new room into the database that will automatically
+                  show on the frontend, admin can see detailed analytics on the
+                  analytics page. On the bookings page, admin can see details of
+                  the bookings made, such as the userID, email, payment status,
+                  room type, room ID etc. On the bookings page also admin can
+                  also delete a booking, the same about the reservation page.
+                </p>
+              </div>
+
+              <div className="p-1">
+                <p className="text-[20px] leading-8 mb-8">
+                  On the users page, admin can see the total number of users,
+                  active users, and inactive users. Also on the users page,
+                  admin can see full detail about each users that signs up, such
+                  as first name, last name, email, status, user ID etc.{" "}
+                  <br></br> Also we have the messages page where admin can view
+                  and reply messages sent by users/customers. On the analytics
+                  page, admin can analyze a chart that shows detailed monthly,
+                  daily and yearly analytics of the bookings and revenues.
+                </p>
+                <p className="text-[20px] leading-8 mb-8">
+                  Admin can also edit their profile such as their name, email
+                  address. Admin can also view detailed analytics of rooms
+                  available, rooms occupied, occupancy rate and insert a new
+                  room.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div
+            className="grid grid-cols-1 w-[100%] mt-[100px] lg:pt-[100px] pt-[20px]"
+            id="admin_screenshots"
+          >
+            <Image
+              src={dashboard}
+              alt="Dashboard of Booknest admin management system"
+              placeholder="blur"
+              className="p-10"
+            />
+          </div>
+
+          <div
+            className="grid grid-cols-1 lg:grid-cols-2 w-[100%] mt-[100px] lg:pt-[100px] pt-[20px]"
+            id="screenshots"
+          >
+            <Image
+              src={dashboard}
+              alt="Dashboard of Booknest admin management system"
+              placeholder="blur"
+              className="p-10"
+            />
+            <Image
+              src={bookings}
+              alt="Bookings page of the admin management system"
+              placeholder="blur"
+              className="p-10"
+            />
+            <Image
+              src={analytics}
+              alt="Analytics page of the admin management system"
+              placeholder="blur"
+              className="p-10"
+            />
+            <Image
+              src={messages}
+              alt="Messages page of the admin management system"
+              placeholder="blur"
+              className="p-10"
+            />
+            <Image
+              src={profile}
+              alt="Profile page of the admin management system"
+              placeholder="blur"
+              className="p-10"
+            />
+            <Image
+              src={users}
+              alt="Users page of the admin management system"
+              placeholder="blur"
+              className="p-10"
+            />
+          </div>
         </div>
       </motion.div>
       <Contact id="contact" />
