@@ -15,6 +15,7 @@ import bookings from "../../public/bookings.png";
 import analytics from "../../public/analytics.png";
 import profile from "../../public/profile.png";
 import users from "../../public/users.png";
+import rooms from "../../public/rooms.png";
 
 import Footer from "../_components/Footer";
 import Contact from "../_components/Contact";
@@ -448,7 +449,13 @@ export default function BookNestProject() {
                   Admin can also edit their profile such as their name, email
                   address. Admin can also view detailed analytics of rooms
                   available, rooms occupied, occupancy rate and insert a new
-                  room.
+                  room. When inserting a new room, details like room number,
+                  room id, room type, price, ammenities, status, room image will
+                  be provided by the admin. And when inserting room image, admin
+                  can either choose to upload an image link or an image from the
+                  local machine. <br></br> You won&apos;t be able to visit the
+                  admin management pages because you are not an authorized site
+                  admin
                 </p>
               </div>
             </div>
@@ -471,12 +478,6 @@ export default function BookNestProject() {
             id="screenshots"
           >
             <Image
-              src={dashboard}
-              alt="Dashboard of Booknest admin management system"
-              placeholder="blur"
-              className="p-10"
-            />
-            <Image
               src={bookings}
               alt="Bookings page of the admin management system"
               placeholder="blur"
@@ -485,6 +486,12 @@ export default function BookNestProject() {
             <Image
               src={analytics}
               alt="Analytics page of the admin management system"
+              placeholder="blur"
+              className="p-10"
+            />
+            <Image
+              src={rooms}
+              alt="Rooms page of the admin management system"
               placeholder="blur"
               className="p-10"
             />
