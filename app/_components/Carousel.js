@@ -28,21 +28,39 @@ export default function Carousel() {
       }}
       transition={{ duration: 0.6, ease: "easeOut" }}
       id="home"
-      className="grid grid-cols-1 lg:grid-cols-2 gap-25 lg:pt-[250px] pt-[150px] lg:mt-[0px] ml-[10px] mr-[10px] mb-[430px] lg:mb-[50px] lg:ml-[150px] lg:mr-[150px] min-h-[100vh] h-screen"
+      className="grid grid-cols-1 lg:grid-cols-2 gap-25 lg:pt-[250px] pt-[150px] lg:mt-[0px] ml-[17px] mr-[17px] mb-[50px] lg:mb-[50px] lg:ml-[150px] lg:mr-[150px] min-h-[80vh]"
     >
-      <div className="font-[Inconsolata] text-[33px] text-center lg:text-start lg:text-[2.8rem] font-bold text-white w-[100%]">
-        <h3 className="lg:leading-[60px] leading-[40px] lg:text-[33px] lg:mb-[8px]">
+      {/* Mobile Image */}
+      <div className="lg:hidden flex justify-start order-1">
+        <Image
+          src={myPicture}
+          quality={100}
+          width={230}
+          height={230}
+          placeholder="blur"
+          alt="Alao Abdul-salam Olayinka"
+          className="rounded-full object-cover aspect-square"
+          style={{
+            width: "230px",
+            height: "230px",
+          }}
+        />
+      </div>
+
+      {/* Text Content */}
+      <div className="font-[Inconsolata] text-[33px] lg:text-start text-start lg:text-[2.8rem] font-bold text-white w-[100%] order-2 lg:order-1">
+        <h3 className="lg:leading-[60px] leading-[40px] text-[25px] lg:text-[33px] lg:mb-[8px]">
           Hi, I&apos;m Abdul-salam.
         </h3>
-        <span className="lg:leading-[60px] leading-[40px] lg:text-[65px] ">
+        <span className="lg:leading-[60px] leading-[40px] text-[35px] lg:text-[50px]">
           A FrontEnd Developer.
         </span>
-        <h3 className="lg:leading-[50px] leading-[40px] lg:text-[33px] lg:mt-2">
-          I Focuses on building a user-friendly websites and web applications
-          for brands and businesses.
+        <h3 className="lg:leading-[50px] leading-[40px] text-[25px] lg:text-[33px] lg:mt-2">
+          I focus on building user-friendly websites and web applications for
+          brands and businesses.
         </h3>
 
-        <div className="mt-10 flex gap-7 justify-center lg:justify-start">
+        <div className="mt-10 flex gap-7 justify-start lg:justify-start">
           <a
             href="https://wa.me/2348169415526"
             target="_blank"
@@ -82,15 +100,18 @@ export default function Carousel() {
         </div>
       </div>
 
-      <Image
-        src={myPicture}
-        quality={100}
-        width={500}
-        height={100}
-        placeholder="blur"
-        alt="Alao Abdul-salam Olayinka"
-        className="rounded-xl justify-self-center"
-      />
+      {/* Desktop Image - Only shows on lg screens */}
+      <div className="hidden lg:flex justify-center items-center order-2">
+        <Image
+          src={myPicture}
+          quality={100}
+          width={500}
+          height={500}
+          placeholder="blur"
+          alt="Alao Abdul-salam Olayinka"
+          className="rounded-xl w-full max-w-[500px]"
+        />
+      </div>
     </motion.div>
   );
 }

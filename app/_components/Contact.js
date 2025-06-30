@@ -23,7 +23,7 @@ export default function Contact() {
 
     emailjs
       .sendForm(
-        "service_dt4lfep", // from EmailJS
+        "service_dt4lfep",
         "template_hbmczan",
         formRef.current,
         "zLcqtoGgeFglmGnFb"
