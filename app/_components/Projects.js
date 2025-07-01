@@ -68,7 +68,7 @@ export default function Projects() {
             authorized staffs.
           </p>
           <Link
-            className="text-white text-[22px] lg:text-[25px] flex gap-5 font-[Inconsolata] hover:text-blue-400"
+            className="text-white text-[22px] lg:text-[25px] flex gap-5 font-[Inconsolata] hover:text-blue-400 underline"
             href="/booknest-project"
             target="_blank"
           >
@@ -143,7 +143,7 @@ export default function Projects() {
             insert meal into the database with a well designed UI.
           </p>
           <Link
-            className="text-white text-[22px] lg:text-[25px] flex gap-5 font-[Inconsolata] hover:text-blue-400"
+            className="text-white text-[22px] lg:text-[25px] flex gap-5 font-[Inconsolata] hover:text-blue-400 underline"
             href="/savour-project-admin"
             target="_blank"
           >
@@ -177,7 +177,7 @@ export default function Projects() {
             company offers.
           </p>
           <Link
-            className="text-white text-[25px] flex gap-5 font-[Inconsolata] hover:text-blue-400"
+            className="text-white text-[25px] flex gap-5 font-[Inconsolata] hover:text-blue-400 underline"
             href="/the-wild-oasis-project"
             target="_blank"
           >
@@ -210,7 +210,7 @@ export default function Projects() {
             citizens to vote not more than once via a secure platform.
           </p>
           <Link
-            className="text-white text-[25px] flex gap-5 font-[Inconsolata] hover:text-blue-400"
+            className="text-white text-[25px] flex gap-5 font-[Inconsolata] hover:text-blue-400 underline"
             href="/voting-system-project"
             target="_blank"
           >
@@ -245,7 +245,7 @@ export default function Projects() {
           </p>
           <div className="grid grid-cols-1 lg:grid-cols-2">
             <Link
-              className="text-white text-[25px] flex gap-5 font-[Inconsolata] hover:text-blue-400"
+              className="text-white text-[25px] flex gap-5 font-[Inconsolata] hover:text-blue-400 underline"
               href="https://lustrous-crisp-1be53a.netlify.app"
               target="_blank"
             >
@@ -261,7 +261,7 @@ export default function Projects() {
               </svg>
             </Link>
             <Link
-              className="text-white text-[25px] flex gap-5 font-[Inconsolata] hover:text-blue-400"
+              className="text-white text-[25px] flex gap-5 font-[Inconsolata] hover:text-blue-400 underline"
               href="/Uniziq-Alumni-Report.docx"
               target="_blank"
             >
@@ -299,7 +299,7 @@ export default function Projects() {
           </p>
           <div className="grid grid-cols-1 lg:grid-cols-2">
             <Link
-              className="text-white text-[25px] flex gap-5 font-[Inconsolata] hover:text-blue-400"
+              className="text-white text-[25px] flex gap-5 font-[Inconsolata] hover:text-blue-400 underline"
               href="https://sprightly-sprinkles-7b74b9.netlify.app"
               target="_blank"
             >
@@ -315,7 +315,7 @@ export default function Projects() {
               </svg>
             </Link>
             <Link
-              className="text-white text-[25px] flex gap-5 font-[Inconsolata] hover:text-blue-400"
+              className="text-white text-[25px] flex gap-5 font-[Inconsolata] hover:text-blue-400 underline"
               href="/Translation-app-project-report.docx"
               target="_blank"
             >
