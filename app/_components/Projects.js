@@ -105,7 +105,7 @@ export default function Projects() {
             system that allows users to pay for what they ordered.
           </p>
           <Link
-            className="text-white text-[22px] lg:text-[25px] flex gap-5 font-[Inconsolata] hover:text-blue-400"
+            className="text-white text-[22px] lg:text-[25px] flex gap-5 font-[Inconsolata] hover:text-blue-400 underline"
             href="/savour-project"
             target="_blank"
           >

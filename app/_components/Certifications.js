@@ -65,7 +65,7 @@ export default function Certifications() {
               responsiveness.
             </p>
             <Link
-              className="text-white text-[25px] flex gap-5 font-[Inconsolata]"
+              className="text-white text-[25px] flex gap-5 font-[Inconsolata] underline"
               href="https://www.udemy.com/certificate/UC-313be613-34f9-4de6-b3cf-4c57627bccfe/"
             >
               View Certificate {""}
@@ -98,7 +98,7 @@ export default function Certifications() {
               Statement and much more.
             </p>
             <Link
-              className="text-white text-[25px] flex gap-5 font-[Inconsolata]"
+              className="text-white text-[25px] flex gap-5 font-[Inconsolata] underline"
               href="https://www.udemy.com/certificate/UC-0d8cc11e-2359-4c2e-94b1-e43b592a3abd/"
             >
               View Certificate {""}
@@ -131,7 +131,7 @@ export default function Certifications() {
               can be used to verify the certificate.
             </p>
             <Link
-              className="text-white text-[25px] flex gap-5 font-[Inconsolata]"
+              className="text-white text-[25px] flex gap-5 font-[Inconsolata] underline"
               href="https://www.udemy.com/certificate/UC-464d275f-751f-402b-837b-c8fa93410b46/"
             >
               View Certificate {""}
@@ -165,7 +165,7 @@ export default function Certifications() {
               Pro, OBS and Shotcut.
             </p>
             <Link
-              className="text-white text-[25px] flex gap-5 font-[Inconsolata]"
+              className="text-white text-[25px] flex gap-5 font-[Inconsolata] underline"
               href="https://www.udemy.com/certificate/UC-719f42e4-6ee7-40b7-9fb0-e8e52c755364/"
             >
               View Certificate {""}
@@ -198,7 +198,7 @@ export default function Certifications() {
               empathize, define and ideate what users need.
             </p>
             <Link
-              className="text-white text-[25px] flex gap-5 font-[Inconsolata]"
+              className="text-white text-[25px] flex gap-5 font-[Inconsolata] underline"
               href="#"
             >
               View Certificate {""}
@@ -231,7 +231,7 @@ export default function Certifications() {
               and digitally.
             </p>
             <Link
-              className="text-white text-[25px] flex gap-5 font-[Inconsolata]"
+              className="text-white text-[25px] flex gap-5 font-[Inconsolata] underline"
               href="#"
             >
               View Certificate {""}
