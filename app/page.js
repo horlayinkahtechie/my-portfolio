@@ -37,14 +37,14 @@ export const metadata = {
       "Explore my web development projects built with React, Next.js and more.",
     url: "https://abdulsalamalao.com",
     siteName: "Alao Abdul-salam Portfolio",
-    // images: [
-    //   {
-    //     url: "/og-image.jpg",
-    //     width: 1200,
-    //     height: 630,
-    //     alt: "Alao Abdul-salam Portfolio OG Image",
-    //   },
-    // ],
+    images: [
+      {
+        url: "/Alao Abdulsalam.jpg",
+        width: 1000,
+        height: 630,
+        alt: "Alao Abdul-salam Portfolio OG Image",
+      },
+    ],
     locale: "en_US",
     type: "website",
   },
@@ -52,7 +52,7 @@ export const metadata = {
     card: "summary_large_image",
     title: "Alao Abdul-salam Olayinka | Frontend Developer",
     description: "Check out my projects built with NextJS, React, and more.",
-    // images: ["/og-image.jpg"],
+    images: ["/Alao Abdulsalam.jpg"],
     creator: "@dev_olayinka",
   },
   robots: {

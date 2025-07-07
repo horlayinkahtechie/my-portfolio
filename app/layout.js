@@ -12,10 +12,13 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <meta
-        name="google-site-verification"
-        content="LRBD6N2-Cw79KTYktR68wqj2-dIYktUTvUvJhirxYuE"
-      />
+      <head>
+        <link rel="icon" href="/Alao Abdulsalam.jpg" type="image/jpg" />
+        <meta
+          name="google-site-verification"
+          content="LRBD6N2-Cw79KTYktR68wqj2-dIYktUTvUvJhirxYuE"
+        />
+      </head>
       <body className="bg-gray-900">{children}</body>
     </html>
   );

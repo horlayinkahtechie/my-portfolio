@@ -35,14 +35,14 @@ export default function Carousel() {
         <Image
           src={myPicture}
           quality={100}
-          width={230}
-          height={230}
+          width={200}
+          height={200}
           placeholder="blur"
           alt="Alao Abdul-salam Olayinka"
           className="rounded-full object-cover aspect-square"
           style={{
-            width: "230px",
-            height: "230px",
+            width: "200px",
+            height: "200px",
           }}
         />
       </div>
