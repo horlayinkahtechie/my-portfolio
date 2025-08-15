@@ -12,6 +12,7 @@ import booknesthero from "../../public/hero.png";
 import savor from "../../public/Savour.png";
 import UNIZIK from "../../public/UNIZIK.png";
 import translationApp from "../../public/translateapp.png";
+import lolaselanHero from "../../public/lolaselanHero.png";
 
 import Link from "next/link";
 
@@ -48,6 +49,45 @@ export default function Projects() {
       </p>
 
       <div className="grid grid-cols-1 lg:grid-cols-2 mt-[40px]">
+        <div className="p-4">
+          <Image
+            width={670}
+            height={300}
+            quality={70}
+            src={lolaselanHero}
+            placeholder="blur"
+            alt="An e-commerce website for lolaselan"
+          />
+          <h3 className="text-white text-[25px] lg:text-[30px] font-bold mt-[70px] font-[Inconsolata]">
+            LolasÈlan
+          </h3>
+          <p className="mt-4 text-white font-bold text-[19px] lg:text-[20px] lg:tracking-tight tracking-wide mb-[30px] leading-[36px]">
+            Lolaselan is a UK-based E-commerce platform for an African
+            women&apos;s fashion store, designed to provide customers with a
+            seamless online shopping experience. The website features a clean,
+            user-friendly interface and a smooth, intuitive ordering process,
+            making it easy for shoppers to browse and purchase products.
+          </p>
+          <Link
+            className="text-white text-[22px] lg:text-[25px] flex gap-5 font-[Inconsolata] hover:text-blue-400 underline"
+            href="/lolaselan"
+            target="_blank"
+          >
+            Read more {""}
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="30"
+              fill="currentColor"
+              className="bi bi-arrow-right"
+              viewBox="0 0 16 16"
+            >
+              <path
+                fileRule="evenodd"
+                d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8"
+              />
+            </svg>
+          </Link>
+        </div>
         <div className="p-4">
           <Image
             width={670}
