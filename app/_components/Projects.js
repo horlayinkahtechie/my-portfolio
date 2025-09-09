@@ -1,10 +1,12 @@
 "use client";
-"use client";
 import { motion, useAnimation } from "framer-motion";
 import { useEffect } from "react";
 import { useInView } from "react-intersection-observer";
-
 import Image from "next/image";
+import Link from "next/link";
+import { FiExternalLink, FiFileText, FiGithub } from "react-icons/fi";
+
+// Import your project images
 import RestaurantReservationSystem from "../../public/Admin-dashboard.png";
 import TheWildOasis from "../../public/the-wild-oasis.png";
 import presidentialVotingSystem from "../../public/presidential-voting-system.png";
@@ -13,8 +15,6 @@ import savor from "../../public/Savour.png";
 import UNIZIK from "../../public/UNIZIK.png";
 import translationApp from "../../public/translateapp.png";
 import lolaselanHero from "../../public/lolaselanHero.png";
-
-import Link from "next/link";
 
 export default function Projects() {
   const controls = useAnimation();
@@ -25,354 +25,237 @@ export default function Projects() {
       controls.start("visible");
     }
   }, [controls, inView]);
-  return (
-    <motion.div
-      ref={ref}
-      initial="hidden"
-      animate={controls}
-      variants={{
-        hidden: { opacity: 0, y: 50 },
-        visible: { opacity: 1, y: 0 },
-      }}
-      transition={{ duration: 0.6, ease: "easeOut" }}
-      id="my-projects"
-      className="lg:pt-[300px] pt-[150px] p-[15px] lg:p-0  lg:ml-[150px] lg:mr-[150px]"
-    >
-      <h2 className="text-white text-4xl font-bold relative inline-block mb-3">
-        What I&apos;ve been working on
-        <span className="absolute left-0 bottom-[-6px] w-[100%] h-2 bg-gradient-to-r from-blue-500 to-blue-700 transform -skew-x-12"></span>
-      </h2>
-      <p className="w-[100%] lg:w-[55%] text-white mt-5 leading-[35px] text-[19px] lg:text-[20px] lg:tracking-tight tracking-wide">
-        Having a project at work is something I enjoy, along with learning
-        something new. <br />
-        Take a look at some of the applications that I have been working on:
-      </p>
 
-      <div className="grid grid-cols-1 lg:grid-cols-2 mt-[40px]">
-        <div className="p-4">
-          <Image
-            width={670}
-            height={300}
-            quality={70}
-            src={lolaselanHero}
-            placeholder="blur"
-            alt="An e-commerce website for lolaselan"
-          />
-          <h3 className="text-white text-[25px] lg:text-[30px] font-bold mt-[70px] font-[Inconsolata]">
-            LolasÈlan
-          </h3>
-          <p className="mt-4 text-white font-bold text-[19px] lg:text-[20px] lg:tracking-tight tracking-wide mb-[30px] leading-[36px]">
-            Lolaselan is a UK-based E-commerce platform for an African
-            women&apos;s fashion store, designed to provide customers with a
-            seamless online shopping experience. The website features a clean,
-            user-friendly interface and a smooth, intuitive ordering process,
-            making it easy for shoppers to browse and purchase products.
-          </p>
-          <Link
-            className="text-white text-[22px] lg:text-[25px] flex gap-5 font-[Inconsolata] hover:text-blue-400 underline"
-            href="/lolaselan"
-            target="_blank"
-          >
-            Read more {""}
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              width="30"
-              fill="currentColor"
-              className="bi bi-arrow-right"
-              viewBox="0 0 16 16"
-            >
-              <path
-                fileRule="evenodd"
-                d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8"
-              />
-            </svg>
-          </Link>
-        </div>
-        <div className="p-4">
-          <Image
-            width={670}
-            height={300}
-            quality={70}
-            src={booknesthero}
-            placeholder="blur"
-            alt="Savor Restaurant Ordering and Reservation System with an Administrator"
-          />
-          <h3 className="text-white text-[25px] lg:text-[30px] font-bold mt-[70px] font-[Inconsolata]">
-            BookNest
-          </h3>
-          <p className="mt-4 text-white font-bold text-[19px] lg:text-[20px] lg:tracking-tight tracking-wide mb-[30px] leading-[36px]">
-            BookNest is an online hotel booking system where users can book a
-            room and pay from their device prior to their arrival. Booknest also
-            has an integrated live chat for questions or support. Booknest also
-            have a admin management system that could only be accessed by
-            authorized staffs.
-          </p>
-          <Link
-            className="text-white text-[22px] lg:text-[25px] flex gap-5 font-[Inconsolata] hover:text-blue-400 underline"
-            href="/booknest-project"
-            target="_blank"
-          >
-            Read more {""}
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              width="30"
-              fill="currentColor"
-              className="bi bi-arrow-right"
-              viewBox="0 0 16 16"
-            >
-              <path
-                fileRule="evenodd"
-                d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8"
-              />
-            </svg>
-          </Link>
-        </div>
-        <div className="p-4">
-          <Image
-            width={670}
-            height={300}
-            quality={70}
-            src={savor}
-            placeholder="blur"
-            alt="Savor Restaurant Ordering and Reservation System with an Administrator"
-          />
-          <h3 className="text-white text-[25px] lg:text-[30px] font-bold mt-[70px] font-[Inconsolata]">
-            Savor Restaurant Ordering and Reservation system
-          </h3>
-          <p className="mt-4 text-white font-bold text-[19px] lg:text-[20px] lg:tracking-tight tracking-wide mb-[30px] leading-[36px]">
-            Savor Restaurant Ordering and Reservation system allows
-            authenticated users place orders, reserve a seat, with a payment
-            system that allows users to pay for what they ordered.
-          </p>
-          <Link
-            className="text-white text-[22px] lg:text-[25px] flex gap-5 font-[Inconsolata] hover:text-blue-400 underline"
-            href="/savour-project"
-            target="_blank"
-          >
-            Read more {""}
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              width="30"
-              fill="currentColor"
-              className="bi bi-arrow-right"
-              viewBox="0 0 16 16"
-            >
-              <path
-                fileRule="evenodd"
-                d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8"
-              />
-            </svg>
-          </Link>
-        </div>
-        <div className="p-4">
-          <Image
-            width={670}
-            height={300}
-            quality={70}
-            src={RestaurantReservationSystem}
-            placeholder="blur"
-            alt="Savor Restaurant Ordering and Reservation System Admin page"
-          />
-          <h3 className="text-white text-[25px] lg:text-[30px] font-bold mt-[70px] font-[Inconsolata]">
-            Admin of the Savor Restaurant Ordering and Reservation system
-          </h3>
-          <p className="mt-4 text-white font-bold text-[19px] lg:text-[20px] lg:tracking-tight tracking-wide mb-[30px] leading-[36px]">
-            A fully functional Restaurant Admin Page where authorized admin can
-            access user orders, mark order or reservation as completed, track
-            revenue, total users, new and old reservations and orders, also
-            insert meal into the database with a well designed UI.
-          </p>
-          <Link
-            className="text-white text-[22px] lg:text-[25px] flex gap-5 font-[Inconsolata] hover:text-blue-400 underline"
-            href="/savour-project-admin"
-            target="_blank"
-          >
-            Read more {""}
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              width="30"
-              fill="currentColor"
-              className="bi bi-arrow-right"
-              viewBox="0 0 16 16"
-            >
-              <path d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8" />
-            </svg>
-          </Link>
-        </div>
-        <div className="p-4">
-          <Image
-            width={670}
-            height={300}
-            src={TheWildOasis}
-            quality={70}
-            alt="The wild Oasis Website"
-            placeholder="blur"
-          />
-          <h3 className="text-white text-[25px] lg:text-[30px] font-bold mt-[25px] font-[Inconsolata]">
-            The Wild Oasis
-          </h3>
-          <p className="mt-4 text-white font-bold text-[19px] lg:text-[20px] lg:tracking-tight tracking-wide mb-[30px] leading-[36px]">
-            The Wild Oasis Web is a user friendly fullstack application. The
-            purpose of this is to enable users to book cabins that WildOasis
-            company offers.
-          </p>
-          <Link
-            className="text-white text-[25px] flex gap-5 font-[Inconsolata] hover:text-blue-400 underline"
-            href="/the-wild-oasis-project"
-            target="_blank"
-          >
-            Read More {""}
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              width="30"
-              fill="currentColor"
-              className="bi bi-arrow-right"
-              viewBox="0 0 16 16"
-            >
-              <path d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8" />
-            </svg>
-          </Link>
-        </div>
-        <div className="p-4 mt-[50px]">
-          <Image
-            width={670}
-            height={300}
-            quality={70}
-            src={presidentialVotingSystem}
-            alt="Presidential Voting System"
-            placeholder="blur"
-          />
-          <h3 className="text-white text-[25px] lg:text-[30px] font-bold mt-[25px] font-[Inconsolata]">
-            Presidential Voting System
-          </h3>
-          <p className="mt-4 text-white font-bold text-[19px] lg:text-[20px] lg:tracking-tight tracking-wide mb-[30px] leading-[36px]">
-            The Presidential Voting system allows eligible, authenticated
-            citizens to vote not more than once via a secure platform.
-          </p>
-          <Link
-            className="text-white text-[25px] flex gap-5 font-[Inconsolata] hover:text-blue-400 underline"
-            href="/voting-system-project"
-            target="_blank"
-          >
-            Read more {""}
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              width="30"
-              fill="currentColor"
-              className="bi bi-arrow-right"
-              viewBox="0 0 16 16"
-            >
-              <path d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8" />
-            </svg>
-          </Link>
-        </div>
-        <div className="p-4 mt-[50px]">
-          <Image
-            width={670}
-            height={300}
-            quality={70}
-            src={UNIZIK}
-            alt="Unizik Alumni website"
-            placeholder="blur"
-          />
-          <h3 className="text-white text-[25px] lg:text-[30px] font-bold mt-[25px] font-[Inconsolata]">
-            UNIZIK Alumni Website
-          </h3>
-          <p className="mt-4 text-white font-bold text-[19px] lg:text-[20px] lg:tracking-tight tracking-wide mb-[30px] leading-[36px]">
-            I designed a user-friendly and responsive UNIZIK Alumni website for
-            a Yaba College of Technology student for their final year project.
-            You can read more in the project report.
-          </p>
-          <div className="grid grid-cols-1 lg:grid-cols-2">
-            <Link
-              className="text-white text-[25px] flex gap-5 font-[Inconsolata] hover:text-blue-400 underline"
-              href="https://lustrous-crisp-1be53a.netlify.app"
-              target="_blank"
-            >
-              View Project {""}
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="30"
-                fill="currentColor"
-                className="bi bi-arrow-right"
-                viewBox="0 0 16 16"
+  const containerVariants = {
+    hidden: { opacity: 0 },
+    visible: {
+      opacity: 1,
+      transition: {
+        staggerChildren: 0.15,
+        delayChildren: 0.3,
+      },
+    },
+  };
+
+  const itemVariants = {
+    hidden: { y: 30, opacity: 0 },
+    visible: {
+      y: 0,
+      opacity: 1,
+      transition: {
+        duration: 0.6,
+        ease: "easeOut",
+      },
+    },
+  };
+
+  const projects = [
+    {
+      title: "LolasÈlan",
+      description:
+        "Lolaselan is a UK-based E-commerce platform for an African women's fashion store, designed to provide her customers with a seamless online shopping experience. The website features a clean, user-friendly interface and a smooth, intuitive ordering process.",
+      image: lolaselanHero,
+      link: "/lolaselan",
+      tags: ["E-commerce", "React", "Next.js"],
+      type: "project",
+    },
+    {
+      title: "BookNest",
+      description:
+        "BookNest is an online hotel booking system where users can book a room and pay from their device prior to their arrival. Booknest also has an integrated live chat for questions or support and an admin management system.",
+      image: booknesthero,
+      link: "/booknest-project",
+      tags: ["Hotel Booking", "Fullstack", "Payment Integration"],
+      type: "project",
+    },
+    {
+      title: "Savor Restaurant Ordering and Reservation system",
+      description:
+        "Savor Restaurant Ordering and Reservation system allows authenticated users place orders, reserve a seat, with a payment system that allows users to pay for what they ordered.",
+      image: savor,
+      link: "/savour-project",
+      tags: ["Restaurant", "Ordering System", "Reservation"],
+      type: "project",
+    },
+    {
+      title: "Savor Restaurant Admin Dashboard",
+      description:
+        "A fully functional Restaurant Admin Page where authorized admin can access user orders, mark order or reservation as completed, track revenue, total users, and manage menu items with a well designed UI.",
+      image: RestaurantReservationSystem,
+      link: "/savour-project-admin",
+      tags: ["Admin Dashboard", "Analytics", "Management"],
+      type: "project",
+    },
+    {
+      title: "The Wild Oasis",
+      description:
+        "The Wild Oasis Web is a user friendly fullstack application. The purpose of this is to enable users to book cabins that WildOasis company offers.",
+      image: TheWildOasis,
+      link: "/the-wild-oasis-project",
+      tags: ["Cabin Booking", "Fullstack", "Responsive"],
+      type: "project",
+    },
+    {
+      title: "Presidential Voting System",
+      description:
+        "The Presidential Voting system allows eligible, authenticated citizens to vote not more than once via a secure platform.",
+      image: presidentialVotingSystem,
+      link: "/voting-system-project",
+      tags: ["Voting System", "Authentication", "Security"],
+      type: "project",
+    },
+    {
+      title: "UNIZIK Alumni Website",
+      description:
+        "I designed a user-friendly and responsive UNIZIK Alumni website for a Yaba College of Technology student for their final year project.",
+      image: UNIZIK,
+      liveLink: "https://lustrous-crisp-1be53a.netlify.app",
+      reportLink: "/Uniziq-Alumni-Report.docx",
+      tags: ["Alumni Portal", "Education", "Responsive"],
+      type: "dual-link",
+    },
+    {
+      title: "Nigerian Language Translation App",
+      description:
+        "A translation App that translates the three popular Nigerian Languages which is Igbo, Yoruba and Hausa to English with a simple User Interface.",
+      image: translationApp,
+      liveLink: "https://sprightly-sprinkles-7b74b9.netlify.app",
+      reportLink: "/Translation-app-project-report.docx",
+      tags: ["Translation", "Languages", "UI/UX"],
+      type: "dual-link",
+    },
+  ];
+
+  return (
+    <section
+      id="my-projects"
+      className="relative py-16 lg:py-24 overflow-hidden scroll-mt-20"
+    >
+      {/* Background elements */}
+      <div className="absolute top-0 left-0 w-full h-1/3 bg-gradient-to-b from-gray-900 to-transparent opacity-50"></div>
+      <div className="absolute -top-40 -right-40 w-80 h-80 bg-purple-600 rounded-full mix-blend-soft-light filter blur-3xl opacity-20"></div>
+      <div className="absolute -bottom-40 -left-40 w-80 h-80 bg-blue-600 rounded-full mix-blend-soft-light filter blur-3xl opacity-20"></div>
+
+      <div className="container mx-auto px-4 lg:px-8 relative z-10">
+        <motion.div
+          ref={ref}
+          initial="hidden"
+          animate={controls}
+          variants={containerVariants}
+        >
+          {/* Section Header */}
+          <motion.div variants={itemVariants} className="text-center mb-16">
+            <h2 className="text-3xl lg:text-4xl font-bold text-white mb-4">
+              My{" "}
+              <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-indigo-300">
+                Projects
+              </span>
+            </h2>
+            <p className="text-lg text-gray-400 max-w-2xl mx-auto">
+              I enjoy working on projects that challenge me to learn something
+              new. Take a look at some of the applications I&apos;ve built:
+            </p>
+            <div className="w-24 h-1 bg-gradient-to-r from-purple-500 to-indigo-500 mx-auto mt-4 rounded-full"></div>
+          </motion.div>
+
+          {/* Projects Grid */}
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-8">
+            {projects.map((project, index) => (
+              <motion.div
+                key={index}
+                variants={itemVariants}
+                whileHover={{ y: -5 }}
+                className="group bg-gray-800/50 backdrop-blur-sm rounded-xl overflow-hidden border border-gray-700 hover:border-purple-500 transition-all duration-300"
               >
-                <path d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8" />
-              </svg>
-            </Link>
-            <Link
-              className="text-white text-[25px] flex gap-5 font-[Inconsolata] hover:text-blue-400 underline"
-              href="/Uniziq-Alumni-Report.docx"
-              target="_blank"
-            >
-              View Project Report {""}
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="30"
-                fill="currentColor"
-                className="bi bi-arrow-right"
-                viewBox="0 0 16 16"
-              >
-                <path d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8" />
-              </svg>
-            </Link>
+                {/* Project Image */}
+                <div className="relative overflow-hidden">
+                  <Image
+                    src={project.image}
+                    alt={project.title}
+                    className="w-full h-48 object-cover group-hover:scale-105 transition-transform duration-300"
+                    placeholder="blur"
+                  />
+                  <div className="absolute inset-0 bg-gradient-to-t from-gray-900 to-transparent opacity-70"></div>
+                  <div className="absolute bottom-3 left-4 flex flex-wrap gap-2">
+                    {project.tags.map((tag, i) => (
+                      <span
+                        key={i}
+                        className="px-2 py-1 bg-purple-600/30 text-purple-200 text-xs rounded-full backdrop-blur-sm"
+                      >
+                        {tag}
+                      </span>
+                    ))}
+                  </div>
+                </div>
+
+                {/* Project Content */}
+                <div className="p-6">
+                  <h3 className="text-xl font-bold text-white mb-3 group-hover:text-purple-300 transition-colors duration-300">
+                    {project.title}
+                  </h3>
+                  <p className="text-gray-400 mb-5 leading-relaxed">
+                    {project.description}
+                  </p>
+
+                  {/* Project Links */}
+                  <div className="flex items-center justify-between">
+                    {project.type === "project" ? (
+                      <Link
+                        href={project.link}
+                        target="_blank"
+                        className="inline-flex items-center text-sm font-medium text-purple-400 hover:text-purple-300 transition-colors duration-300"
+                      >
+                        View Project
+                        <FiExternalLink className="ml-2" />
+                      </Link>
+                    ) : (
+                      <div className="flex gap-4">
+                        <Link
+                          href={project.liveLink}
+                          target="_blank"
+                          className="inline-flex items-center text-sm font-medium text-purple-400 hover:text-purple-300 transition-colors duration-300"
+                        >
+                          Live Demo
+                          <FiExternalLink className="ml-2" />
+                        </Link>
+                        <Link
+                          href={project.reportLink}
+                          target="_blank"
+                          className="inline-flex items-center text-sm font-medium text-gray-400 hover:text-gray-300 transition-colors duration-300"
+                        >
+                          Report
+                          <FiFileText className="ml-2" />
+                        </Link>
+                      </div>
+                    )}
+
+                    <div className="flex items-center text-xs text-gray-500">
+                      <span className="h-2 w-2 bg-green-400 rounded-full mr-2"></span>
+                      Completed
+                    </div>
+                  </div>
+                </div>
+              </motion.div>
+            ))}
           </div>
-        </div>
-        <div className="p-4 mt-[50px]">
-          <Image
-            width={670}
-            height={300}
-            quality={70}
-            src={translationApp}
-            alt="Nigerian Language Translation App
-"
-            placeholder="blur"
-          />
-          <h3 className="text-white text-[25px] lg:text-[30px] font-bold mt-[25px] font-[Inconsolata]">
-            Nigerian Language Translation App
-          </h3>
-          <p className="mt-4 text-white font-bold text-[19px] lg:text-[20px] lg:tracking-tight tracking-wide mb-[30px] leading-[36px]">
-            A translation App that translates the three popular Nigerian
-            Languages which is Igbo, Yoruba and Hausa to English with a simple
-            User Interface. You can read more about the project in the project
-            report.
-          </p>
-          <div className="grid grid-cols-1 lg:grid-cols-2">
-            <Link
-              className="text-white text-[25px] flex gap-5 font-[Inconsolata] hover:text-blue-400 underline"
-              href="https://sprightly-sprinkles-7b74b9.netlify.app"
+
+          {/* Call to Action */}
+          <motion.div variants={itemVariants} className="text-center mt-16">
+            <p className="text-gray-400 mb-6">Want to see more of my work?</p>
+            <motion.a
+              href="https://github.com/horlayinkahtechie"
               target="_blank"
+              rel="noopener noreferrer"
+              whileHover={{ scale: 1.05 }}
+              whileTap={{ scale: 0.95 }}
+              className="inline-flex items-center px-6 py-3 bg-gray-700 text-white font-medium rounded-lg transition-all duration-300 hover:bg-gray-600"
             >
-              View Project {""}
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="30"
-                fill="currentColor"
-                className="bi bi-arrow-right"
-                viewBox="0 0 16 16"
-              >
-                <path d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8" />
-              </svg>
-            </Link>
-            <Link
-              className="text-white text-[25px] flex gap-5 font-[Inconsolata] hover:text-blue-400 underline"
-              href="/Translation-app-project-report.docx"
-              target="_blank"
-            >
-              View Project Report {""}
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="30"
-                fill="currentColor"
-                className="bi bi-arrow-right"
-                viewBox="0 0 16 16"
-              >
-                <path d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8" />
-              </svg>
-            </Link>
-          </div>
-        </div>
+              <FiGithub className="mr-2" />
+              View GitHub
+            </motion.a>
+          </motion.div>
+        </motion.div>
       </div>
-    </motion.div>
+    </section>
   );
 }

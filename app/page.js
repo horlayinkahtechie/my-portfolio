@@ -1,11 +1,12 @@
 import Navbar from "./_components/Navbar";
 import Carousel from "./_components/Carousel";
 import AboutMe from "./_components/About-me";
-import MySkills from "./_components/MYSkills";
 import Projects from "./_components/Projects";
 import Certifications from "./_components/Certifications";
 import Contact from "./_components/Contact";
 import Footer from "./_components/Footer";
+import ServicesSection from "./_components/my-services";
+import Testimonials from "./_components/clientTestimonials";
 export const metadata = {
   title: "Alao Abdul-salam Olayinka | Frontend Developer",
   description:
@@ -81,8 +82,9 @@ export default function Home() {
         <Navbar />
         <Carousel />
         <AboutMe />
-        <MySkills />
+        <ServicesSection />
         <Projects />
+        <Testimonials />
         <Certifications />
         <Contact />
         <Footer />
