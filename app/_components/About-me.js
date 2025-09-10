@@ -45,7 +45,7 @@ export default function AboutMe() {
     },
     {
       icon: <FiAward className="w-5 h-5" />,
-      value: "8+",
+      value: "6+",
       label: "Certifications",
     },
     {

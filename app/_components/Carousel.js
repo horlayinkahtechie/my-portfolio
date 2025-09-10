@@ -1,11 +1,12 @@
 "use client";
 import { motion, useAnimation } from "framer-motion";
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 import { useInView } from "react-intersection-observer";
 import { FaWhatsapp, FaGithub, FaLinkedin, FaArrowRight } from "react-icons/fa";
 import { FaXTwitter } from "react-icons/fa6";
 import Image from "next/image";
 import myPicture from "../../public/Alao Abdulsalam.jpg";
+import Link from "next/link";
 
 export default function Carousel() {
   const controls = useAnimation();
@@ -40,6 +41,18 @@ export default function Carousel() {
       },
     },
   };
+
+  const [scrolled, setScrolled] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      const isScrolled = window.scrollY > 10;
+      setScrolled(isScrolled);
+    };
+
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
 
   return (
     <motion.section
@@ -97,20 +110,24 @@ export default function Carousel() {
             variants={itemVariants}
             className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start mb-10"
           >
-            <a
+            <Link
               href="#contact"
               className="group relative flex items-center justify-center px-8 py-3 bg-gradient-to-r from-purple-600 to-indigo-600 text-white font-medium rounded-lg overflow-hidden transition-all duration-300 hover:from-purple-700 hover:to-indigo-700 hover:shadow-lg hover:shadow-purple-500/30"
             >
               <span className="mr-2">Hire Me</span>
               <FaArrowRight className="transition-transform duration-300 group-hover:translate-x-1" />
-            </a>
+            </Link>
 
-            <a
-              href="#projects"
+            <Link
+              href="#my-projects"
+              smooth={true}
+              duration={500}
+              spy={true}
+              offset={-80}
               className="px-8 py-3 border border-gray-600 text-white font-medium rounded-lg transition-all duration-300 hover:border-purple-500 hover:text-purple-300 hover:shadow-lg hover:shadow-purple-500/10"
             >
               View Projects
-            </a>
+            </Link>
           </motion.div>
 
           {/* Social Links */}

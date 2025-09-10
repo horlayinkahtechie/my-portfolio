@@ -95,15 +95,7 @@ export default function Projects() {
       tags: ["Cabin Booking", "Fullstack", "Responsive"],
       type: "project",
     },
-    {
-      title: "Presidential Voting System",
-      description:
-        "The Presidential Voting system allows eligible, authenticated citizens to vote not more than once via a secure platform.",
-      image: presidentialVotingSystem,
-      link: "/voting-system-project",
-      tags: ["Voting System", "Authentication", "Security"],
-      type: "project",
-    },
+
     {
       title: "UNIZIK Alumni Website",
       description:
@@ -112,16 +104,6 @@ export default function Projects() {
       liveLink: "https://lustrous-crisp-1be53a.netlify.app",
       reportLink: "/Uniziq-Alumni-Report.docx",
       tags: ["Alumni Portal", "Education", "Responsive"],
-      type: "dual-link",
-    },
-    {
-      title: "Nigerian Language Translation App",
-      description:
-        "A translation App that translates the three popular Nigerian Languages which is Igbo, Yoruba and Hausa to English with a simple User Interface.",
-      image: translationApp,
-      liveLink: "https://sprightly-sprinkles-7b74b9.netlify.app",
-      reportLink: "/Translation-app-project-report.docx",
-      tags: ["Translation", "Languages", "UI/UX"],
       type: "dual-link",
     },
   ];
