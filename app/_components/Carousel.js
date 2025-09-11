@@ -111,7 +111,7 @@ export default function Carousel() {
             className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start mb-10"
           >
             <Link
-              href="#contact"
+              href="/hire-me"
               className="group relative flex items-center justify-center px-8 py-3 bg-gradient-to-r from-purple-600 to-indigo-600 text-white font-medium rounded-lg overflow-hidden transition-all duration-300 hover:from-purple-700 hover:to-indigo-700 hover:shadow-lg hover:shadow-purple-500/30"
             >
               <span className="mr-2">Hire Me</span>
