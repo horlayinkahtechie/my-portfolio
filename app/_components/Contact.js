@@ -223,15 +223,18 @@ export default function Contact() {
           {/* Additional Contact Info */}
           <motion.div variants={itemVariants} className="text-center mt-12">
             <p className="text-gray-400 mb-4">Prefer to reach out directly?</p>
-            <div className="flex justify-center gap-6">
-              <a
+            <div className="grid lg:grid-cols-2 grid-cols-1 justify-center gap-6">
+              <div>
+ <a
                 href="mailto:alaoabdulsalamolayinka@gmail.com"
                 className="text-purple-400 hover:text-purple-300 transition-colors duration-300"
               >
                 contact@abdulsalamalao.com
               </a>
-              <span className="text-gray-600">•</span>
-              <a
+              </div>
+             
+              <div>
+<a
                 href="https://wa.me/2348169415526"
                 target="_blank"
                 rel="noopener noreferrer"
@@ -239,6 +242,8 @@ export default function Contact() {
               >
                 +234 816 941 5526
               </a>
+              </div>
+              
             </div>
           </motion.div>
         </motion.div>
