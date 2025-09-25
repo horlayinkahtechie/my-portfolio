@@ -7,8 +7,11 @@ import Contact from "./_components/Contact";
 import Footer from "./_components/Footer";
 import ServicesSection from "./_components/my-services";
 import Testimonials from "./_components/clientTestimonials";
+import PortfolioBlogSection from "./_components/blogs-section";
+
+
 export const metadata = {
-  title: "Alao Abdul-salam Olayinka | Frontend Developer",
+  title: "Alao Abdul-salam Olayinka | A Frontend Developer",
   description:
     "Welcome to my portfolio! I'm Abdul-salam, a passionate Frontend Developer skilled in React, Next.js, TailwindCSS, and more. View my projects and get in touch.",
   keywords: [
@@ -26,6 +29,11 @@ export const metadata = {
     "React Developer",
     "Frontend Developer in Nigeria",
   ],
+   icons: {
+    icon: "/Alao-Abdulsalam.jpg",      
+    shortcut: "/Alao-Abdulsalam.jpg",   
+    apple: "/Alao-Abdulsalam.jpg",   
+  },
   authors: [
     { name: "Alao Abdul-salam Olayinka", url: "https://abdulsalamalao.com" },
   ],
@@ -40,7 +48,7 @@ export const metadata = {
     siteName: "Alao Abdul-salam Portfolio",
     images: [
       {
-        url: "/Alao Abdulsalam.jpg",
+        url: "/Alao-Abdulsalam.jpg",
         width: 1000,
         height: 630,
         alt: "Alao Abdul-salam Portfolio OG Image",
@@ -53,7 +61,7 @@ export const metadata = {
     card: "summary_large_image",
     title: "Alao Abdul-salam Olayinka | Frontend Developer",
     description: "Check out my projects built with NextJS, React, and more.",
-    images: ["/Alao Abdulsalam.jpg"],
+    images: ["/Alao-Abdulsalam.jpg"],
     creator: "@dev_olayinka",
   },
   robots: {
@@ -84,6 +92,7 @@ export default function Home() {
         <AboutMe />
         <ServicesSection />
         <Projects />
+        <PortfolioBlogSection/>
         <Testimonials />
         <Certifications />
         <Contact />

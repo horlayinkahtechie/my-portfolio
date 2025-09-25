@@ -5,7 +5,7 @@ import { useInView } from "react-intersection-observer";
 import { FaWhatsapp, FaGithub, FaLinkedin, FaArrowRight } from "react-icons/fa";
 import { FaXTwitter } from "react-icons/fa6";
 import Image from "next/image";
-import myPicture from "../../public/Alao Abdulsalam.jpg";
+import myPicture from "../../public/Alao-Abdulsalam.jpg";
 import Link from "next/link";
 
 export default function Carousel() {
@@ -145,7 +145,7 @@ export default function Carousel() {
               <FaWhatsapp className="w-5 h-5" />
             </a>
             <a
-              href="https://x.com/dev_ola"
+              href="https://x.com/dev_olayinka"
               target="_blank"
               rel="noopener noreferrer"
               aria-label="Twitter/X"

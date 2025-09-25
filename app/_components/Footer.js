@@ -5,6 +5,9 @@ import {
   FiLinkedin,
   FiMail,
   FiHeart,
+  FiX,
+  FiTwitter,
+
 } from "react-icons/fi";
 
 export default function Footer() {
@@ -21,9 +24,9 @@ export default function Footer() {
           <div className="text-center lg:text-left">
             <p className="text-gray-400 text-sm lg:text-base flex items-center justify-center lg:justify-start gap-1">
               <span>© {currentYear} Designed and Developed by</span>
-              <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-indigo-300 font-semibold">
+              <Link href="/" className="text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-indigo-300 font-semibold">
                 Alao Abdul-salam
-              </span>
+              </Link>
               <span className="hidden lg:inline">•</span>
               <span className="flex items-center gap-1">
                 Made with
@@ -69,6 +72,19 @@ export default function Footer() {
               <FiLinkedin className="w-5 h-5 group-hover:scale-110 transition-transform duration-300" />
               <span className="text-sm font-medium hidden lg:block">
                 LinkedIn
+              </span>
+            </Link>
+
+            <Link
+              href="https://www.x.com/dev_olayinka"
+              target="_blank"
+              
+              className="text-gray-400 hover:text-purple-400 transition-colors duration-300 flex items-center gap-2 group"
+              aria-label="Twitter"
+            >
+              <FiTwitter className="w-5 h-5 group-hover:scale-110 transition-transform duration-300" />
+              <span className="text-sm font-medium hidden lg:block">
+                Twitter (X)
               </span>
             </Link>
 
