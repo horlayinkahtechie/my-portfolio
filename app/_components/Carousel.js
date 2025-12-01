@@ -63,13 +63,6 @@ export default function Carousel() {
       id="home"
       className="relative min-h-screen flex items-center justify-center px-10 sm:px-6 lg:px-40 py-16 lg:py-24 overflow-hidden pt-35 lg:pt-10"
     >
-      {/* Background elements for visual interest */}
-      <div className="absolute inset-0 -z-10 overflow-hidden">
-        <div className="absolute -top-40 -right-40 w-80 h-80 bg-purple-600 rounded-full mix-blend-soft-light filter blur-3xl opacity-30 animate-blob"></div>
-        <div className="absolute -bottom-40 -left-40 w-80 h-80 bg-indigo-600 rounded-full mix-blend-soft-light filter blur-3xl opacity-30 animate-blob animation-delay-2000"></div>
-        <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-80 h-80 bg-blue-600 rounded-full mix-blend-soft-light filter blur-3xl opacity-30 animate-blob animation-delay-4000"></div>
-      </div>
-
       <div className="container mx-auto grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-center">
         {/* Text Content */}
         <motion.div
@@ -180,7 +173,7 @@ export default function Carousel() {
           className="relative order-1 lg:order-2 flex justify-center"
         >
           <div className="relative w-64 h-64 md:w-80 md:h-80 lg:w-96 lg:h-96">
-            <div className="absolute inset-0 bg-gradient-to-br from-purple-600 to-indigo-600 rounded-full blur-lg opacity-30 animate-pulse"></div>
+         
             <Image
               src={myPicture}
               quality={100}
@@ -192,10 +185,6 @@ export default function Carousel() {
                 objectPosition: "center center",
               }}
             />
-
-            {/* Decorative elements */}
-            <div className="absolute -bottom-2 -right-2 w-24 h-24 border-t-4 border-r-4 border-purple-500 rounded-tr-3xl"></div>
-            <div className="absolute -top-2 -left-2 w-24 h-24 border-b-4 border-l-4 border-indigo-500 rounded-bl-3xl"></div>
           </div>
         </motion.div>
       </div>

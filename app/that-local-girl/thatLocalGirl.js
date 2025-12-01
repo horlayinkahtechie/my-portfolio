@@ -17,30 +17,31 @@ import {
   FiBarChart2,
   FiMail,
   FiShield,
+  FiMessageCircle,
 } from "react-icons/fi";
 
 // Import your images
-import lolaselanHero from "../../public/lolaselanHero.png";
-import newArrivalPage from "../../public/new-arrivals.png";
-import confirmationPage from "../../public/confirmation-page.png";
-import stripeCheckoutPage from "../../public/stripe-checkout.png";
-import collections from "../../public/collections.png";
-import contact from "../../public/contact.png";
-import lolaselanSubscribeHover from "../../public/subscribe-hover.png";
-import lolaselanProfile from "../../public/lolaselanProfile.png";
-import productsPage from "../../public/products.png";
-import lolaselanUsers from "../../public/lolaselanusers.png";
-import lolaselananalytics from "../../public/lolaselananalytics.png";
-import lolaselandashboard from "../../public/lolaselandashboard.png";
-import orders from "../../public/orders.png";
-import subscribers from "../../public/subscribers.png";
-import lolaselanReturn from "../../public/return.png";
+import thatLocalGirlHero from "../../public/thatLocalGirlHero.png";
+import collectionsCardPage from "../../public/collectionsCard.png";
+import productCardPage from "../../public/productCard.png";
+import localgirlaboutPage from "../../public/localGirlAbout.png";
+import localgirlcart from "../../public/localgirlcart.png";
+import localgirlBlog from "../../public/localgirlBlog.png";
+import localgirlCheckout from "../../public/localgirlcheckout.png";
+
+import adminImage1 from "../../public/adminImage1.png";
+import adminImage2 from "../../public/adminImage2.png";
+import adminImage3 from "../../public/adminImage3.png";
+import adminImage4 from "../../public/adminImage4.png";
+import adminImage5 from "../../public/adminImage5.png";
+import adminImage6 from "../../public/adminImage6.png";
+
 
 import Footer from "../_components/Footer";
 import Contact from "../_components/Contact";
 import ProjectNav from "../_components/ProjectNav";
 
-export default function LolaselanProject() {
+export default function ThatLocalGirl() {
   const controls = useAnimation();
   const [ref, inView] = useInView({ threshold: 0.2, triggerOnce: true });
 
@@ -83,6 +84,7 @@ export default function LolaselanProject() {
     { name: "Netlify", icon: <FiServer className="w-5 h-5" /> },
     { name: "Resend", icon: <FiMail className="w-5 h-5" /> },
     { name: "Stripe", icon: <FiShoppingCart className="w-5 h-5" /> },
+    {name: "WhatsApp Cloud API", icon: <FiMessageCircle className="w-5 h-5"/>}
   ];
 
   const features = [
@@ -92,6 +94,8 @@ export default function LolaselanProject() {
     "Product listings",
     "Mobile Responsiveness",
     "Admin Features",
+    "Order confirmation Email",
+    "AI Support"
   ];
 
   return (
@@ -113,9 +117,9 @@ export default function LolaselanProject() {
               variants={itemVariants}
               className="text-4xl lg:text-6xl font-bold text-white text-center mb-6"
             >
-              Lolas
+              That Local{" "}
               <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-indigo-300">
-                Èlan
+                Girl
               </span>
             </motion.h1>
 
@@ -133,7 +137,7 @@ export default function LolaselanProject() {
               className="flex flex-wrap justify-center gap-4 mb-12"
             >
               <a
-                href="https://shoplolaselan.uk"
+                href="https://thatlocalgirl.com"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="flex items-center gap-2 px-6 py-3 bg-gradient-to-r from-purple-600 to-indigo-600 text-white rounded-lg hover:from-purple-700 hover:to-indigo-700 transition-all duration-300"
@@ -142,7 +146,7 @@ export default function LolaselanProject() {
                 Live Preview
               </a>
               <a
-                href="https://github.com/horlayinkahtechie/lolaselan.git"
+                href="https://github.com/horlayinkahtechie/thelocalgirl.git"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="flex items-center gap-2 px-6 py-3 bg-gray-800 text-white rounded-lg hover:bg-gray-700 transition-all duration-300"
@@ -157,8 +161,8 @@ export default function LolaselanProject() {
               className="rounded-xl overflow-hidden border border-gray-700 shadow-2xl"
             >
               <Image
-                src={lolaselanHero}
-                alt="Lolaselan E-commerce Platform"
+                src={thatLocalGirlHero}
+                alt="That Local Girl E-commerce Platform"
                 className="w-full h-auto"
                 placeholder="blur"
               />
@@ -218,7 +222,7 @@ export default function LolaselanProject() {
               <div className="space-y-4 text-gray-300">
                 <p>
                   Full-stack e-commerce solution with admin dashboard, payment
-                  processing, and customer management system.
+                  processing, and customer management system. Includes AI Support, Sleek User Interface and Good User Experience, Optimized images and data fetching to make loading faster and smooth.
                 </p>
                 <div className="flex items-center gap-2">
                   <FiUsers className="w-5 h-5" />
@@ -256,22 +260,10 @@ export default function LolaselanProject() {
               <motion.div variants={itemVariants} className="space-y-6">
                 <div className="bg-gray-800/50 backdrop-blur-sm rounded-xl p-6 border border-gray-700">
                   <h4 className="text-xl font-bold text-white mb-4">
-                    Direct Purchase
-                  </h4>
-                  <p className="text-gray-300">
-                    Customers can buy immediately without adding to cart,
-                    perfect for quick, single-item purchases with streamlined
-                    checkout.
-                  </p>
-                </div>
-
-                <div className="bg-gray-800/50 backdrop-blur-sm rounded-xl p-6 border border-gray-700">
-                  <h4 className="text-xl font-bold text-white mb-4">
                     Cart System
                   </h4>
                   <p className="text-gray-300">
-                    Full shopping cart functionality with size selection,
-                    quantity adjustments, and multi-item checkout support.
+                   Customers can add as much product into the cart, both authenticated and unauthenticated users. Afterwards, they can edit/delete or update their cart before proceeding to checkout.
                   </p>
                 </div>
               </motion.div>
@@ -282,9 +274,8 @@ export default function LolaselanProject() {
                     Secure Checkout
                   </h4>
                   <p className="text-gray-300">
-                    Integrated Stripe payment processing with support for cards,
-                    PayPal, Google Pay, Apple Pay, and multiple other payment
-                    methods.
+                    Before payment, user are required to put down info such as: delivery address, email, phone number, delivery method. Then, an integrated Stripe payment processing with support for cards,
+                    PayPal, Google Pay, Apple Pay, and multiple other payment methods.
                   </p>
                 </div>
 
@@ -330,13 +321,13 @@ export default function LolaselanProject() {
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
             {[
-              newArrivalPage,
-              confirmationPage,
-              stripeCheckoutPage,
-              collections,
-              contact,
-              lolaselanProfile,
-              lolaselanSubscribeHover,
+              collectionsCardPage,
+              productCardPage,
+              localgirlBlog,
+              localgirlCheckout,
+              localgirlaboutPage,
+              localgirlcart,
+             
             ].map((image, index) => (
               <motion.div
                 key={index}
@@ -383,8 +374,7 @@ export default function LolaselanProject() {
                     Secure Authentication
                   </h4>
                   <p className="text-gray-300">
-                    Role-based access control with middleware protection
-                    ensuring only authorized admins can access management
+                    Role-based access control that checks the role of the user trying to log in if they are admin or not, if not they are redirected to the home page and if the user is an admin, they are redirected to admin dashboard, ensuring only authorized admins can access management
                     features.
                   </p>
                 </div>
@@ -396,7 +386,7 @@ export default function LolaselanProject() {
                   </h4>
                   <p className="text-gray-300">
                     Complete order lifecycle management with status updates,
-                    delivery tracking, and customer communication.
+                    delivery tracking, and customer communication. Admin can cancel orders, change the delivery status of the order and much more. Admin can also filter orders for easy access to orders.
                   </p>
                 </div>
               </motion.div>
@@ -409,7 +399,7 @@ export default function LolaselanProject() {
                   </h4>
                   <p className="text-gray-300">
                     Subscriber management with email marketing capabilities and
-                    promotional campaign tools.
+                    promotional campaign tools. Meaning admin can send promotional emails, offers and discount to the email of subscribers.
                   </p>
                 </div>
 
@@ -426,10 +416,10 @@ export default function LolaselanProject() {
               </motion.div>
             </div>
 
-           
+            {/* Admin Screenshots */}
+            
           </motion.div>
-           {/* Admin Screenshots */}
-            <motion.div
+          <motion.div
               initial={{ opacity: 0, y: 30 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
@@ -437,13 +427,12 @@ export default function LolaselanProject() {
               className="grid grid-cols-1 md:grid-cols-2 gap-8"
             >
               {[
-                lolaselandashboard,
-                productsPage,
-                subscribers,
-                lolaselanUsers,
-                orders,
-                lolaselananalytics,
-                lolaselanReturn,
+               adminImage1,
+               adminImage2,
+               adminImage3,
+               adminImage4,
+               adminImage5,
+               adminImage6
               ].map((image, index) => (
                 <div
                   key={index}

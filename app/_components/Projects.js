@@ -15,6 +15,8 @@ import savor from "../../public/Savour.png";
 import UNIZIK from "../../public/UNIZIK.png";
 import translationApp from "../../public/translateapp.png";
 import lolaselanHero from "../../public/lolaselanHero.png";
+import thatLocalGirlHero from "../../public/thatLocalGirlHero.png";
+
 
 export default function Projects() {
   const controls = useAnimation();
@@ -50,6 +52,15 @@ export default function Projects() {
   };
 
   const projects = [
+     {
+      title: "That Local Girl",
+      description:
+        "That Local Girl is a canadian-based E-commerce platform for groceries, including african/nigerian goods designed to provide her customers with a seamless online shopping experience. The website features a clean, user-friendly interface and a smooth, intuitive ordering process and management.",
+      image: thatLocalGirlHero,
+      link: "/that-local-girl",
+      tags: ["E-commerce", "React", "Next.js", "That Local Girl"],
+      type: "project",
+    },
     {
       title: "LolasÈlan",
       description:
