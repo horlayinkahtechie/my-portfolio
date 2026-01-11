@@ -9,14 +9,14 @@ import { FiExternalLink, FiFileText, FiGithub } from "react-icons/fi";
 // Import your project images
 import RestaurantReservationSystem from "../../public/Admin-dashboard.png";
 import TheWildOasis from "../../public/the-wild-oasis.png";
-import presidentialVotingSystem from "../../public/presidential-voting-system.png";
 import booknesthero from "../../public/hero.png";
 import savor from "../../public/Savour.png";
 import UNIZIK from "../../public/UNIZIK.png";
-import translationApp from "../../public/translateapp.png";
+import verseonehotel from "../../public/verseonehotel.png";
+
 import lolaselanHero from "../../public/lolaselanHero.png";
 import thatLocalGirlHero from "../../public/thatLocalGirlHero.png";
-
+import royalMossHero from "../../public/royalMossHero.png";
 
 export default function Projects() {
   const controls = useAnimation();
@@ -52,6 +52,14 @@ export default function Projects() {
   };
 
   const projects = [
+    {
+      title: "Royal Moss Hotel & Suites",
+      description: "Royal Moss Hotel & Suites is a Nigerian Hotel that give hospitality service at view of badagry beach in Lagos, Nigeria. Their website include room listing, room booking with payment system and an admin management system.",      
+      image: royalMossHero,
+      link: "/royal-moss",
+      tags: ["Admin management system", "React", "Next.js", "Royal Moss", "Hotel website"],
+      type: "project",
+    },
      {
       title: "That Local Girl",
       description:
@@ -69,6 +77,16 @@ export default function Projects() {
       link: "/lolaselan",
       tags: ["E-commerce", "React", "Next.js"],
       type: "project",
+    },
+    {
+      title: "Verse One Hotel",
+      description:
+        "Complete hotel booking platform with admin dashboard, payment integration, and email notifications.",
+      image: verseonehotel,
+      liveLink: "https://verseonehotel.com",
+      reportLink: "",
+      tags: ["Hotel website", "Booking", "Responsive"],
+      type: "dual-link",
     },
     {
       title: "BookNest",
@@ -106,7 +124,6 @@ export default function Projects() {
       tags: ["Cabin Booking", "Fullstack", "Responsive"],
       type: "project",
     },
-
     {
       title: "UNIZIK Alumni Website",
       description:
@@ -158,45 +175,55 @@ export default function Projects() {
                 key={index}
                 variants={itemVariants}
                 whileHover={{ y: -5 }}
-                className="group bg-gray-800/50 backdrop-blur-sm rounded-xl overflow-hidden border border-gray-700 hover:border-purple-500 transition-all duration-300"
+                className="group bg-gray-800/50 backdrop-blur-sm rounded-xl overflow-hidden border border-gray-700 hover:border-purple-500 transition-all duration-300 flex flex-col h-full"
               >
-                {/* Project Image */}
-                <div className="relative overflow-hidden">
+                {/* Project Image - Increased Height */}
+                <div className="relative overflow-hidden flex-grow-0">
                   <Image
                     src={project.image}
                     alt={project.title}
-                    className="w-full h-48 object-cover group-hover:scale-105 transition-transform duration-300"
+                    className="w-full h-64 object-cover group-hover:scale-105 transition-transform duration-300"
                     placeholder="blur"
+                    priority={index < 2}
                   />
-                  <div className="absolute inset-0 bg-gradient-to-t from-gray-900 to-transparent opacity-70"></div>
-                  <div className="absolute bottom-3 left-4 flex flex-wrap gap-2">
-                    {project.tags.map((tag, i) => (
+                  
+                  {/* Subtle gradient at bottom for text readability */}
+                  <div className="absolute bottom-0 left-0 right-0 h-16 bg-gradient-to-t from-gray-900/70 to-transparent"></div>
+                  
+                  {/* Tags positioned at top to not interfere with image */}
+                  <div className="absolute top-4 left-4 flex flex-wrap gap-2">
+                    {project.tags.slice(0, 2).map((tag, i) => (
                       <span
                         key={i}
-                        className="px-2 py-1 bg-purple-600/30 text-purple-200 text-xs rounded-full backdrop-blur-sm"
+                        className="px-3 py-1.5 bg-gray-900/90 text-white text-xs font-medium rounded-lg backdrop-blur-sm border border-gray-700"
                       >
                         {tag}
                       </span>
                     ))}
+                    {project.tags.length > 2 && (
+                      <span className="px-3 py-1.5 bg-purple-600/90 text-white text-xs font-medium rounded-lg backdrop-blur-sm">
+                        +{project.tags.length - 2}
+                      </span>
+                    )}
                   </div>
                 </div>
 
                 {/* Project Content */}
-                <div className="p-6">
+                <div className="p-6 flex flex-col flex-grow">
                   <h3 className="text-xl font-bold text-white mb-3 group-hover:text-purple-300 transition-colors duration-300">
                     {project.title}
                   </h3>
-                  <p className="text-gray-400 mb-5 leading-relaxed">
+                  <p className="text-gray-400 mb-5 leading-relaxed flex-grow">
                     {project.description}
                   </p>
 
                   {/* Project Links */}
-                  <div className="flex items-center justify-between">
+                  <div className="flex items-center justify-between mt-auto">
                     {project.type === "project" ? (
                       <Link
                         href={project.link}
                         target="_blank"
-                        className="inline-flex items-center text-sm font-medium text-purple-400 hover:text-purple-300 transition-colors duration-300"
+                        className="inline-flex items-center text-sm font-medium text-purple-400 hover:text-purple-300 transition-colors duration-300 hover:underline"
                       >
                         View Project
                         <FiExternalLink className="ml-2" />
@@ -206,7 +233,7 @@ export default function Projects() {
                         <Link
                           href={project.liveLink}
                           target="_blank"
-                          className="inline-flex items-center text-sm font-medium text-purple-400 hover:text-purple-300 transition-colors duration-300"
+                          className="inline-flex items-center text-sm font-medium text-purple-400 hover:text-purple-300 transition-colors duration-300 hover:underline"
                         >
                           Live Demo
                           <FiExternalLink className="ml-2" />
@@ -214,7 +241,7 @@ export default function Projects() {
                         <Link
                           href={project.reportLink}
                           target="_blank"
-                          className="inline-flex items-center text-sm font-medium text-gray-400 hover:text-gray-300 transition-colors duration-300"
+                          className="inline-flex items-center text-sm font-medium text-gray-400 hover:text-gray-300 transition-colors duration-300 hover:underline"
                         >
                           Report
                           <FiFileText className="ml-2" />
@@ -241,7 +268,7 @@ export default function Projects() {
               rel="noopener noreferrer"
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
-              className="inline-flex items-center px-6 py-3 bg-gray-700 text-white font-medium rounded-lg transition-all duration-300 hover:bg-gray-600"
+              className="inline-flex items-center px-6 py-3 bg-gradient-to-r from-purple-600 to-indigo-600 text-white font-medium rounded-lg transition-all duration-300 hover:from-purple-700 hover:to-indigo-700 hover:shadow-lg hover:shadow-purple-500/30"
             >
               <FiGithub className="mr-2" />
               View GitHub

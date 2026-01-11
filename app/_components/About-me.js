@@ -40,12 +40,12 @@ export default function AboutMe() {
   const stats = [
     {
       icon: <FiCode className="w-5 h-5" />,
-      value: "10+",
+      value: "16+",
       label: "Projects Completed",
     },
     {
       icon: <FiAward className="w-5 h-5" />,
-      value: "6+",
+      value: "7+",
       label: "Certifications",
     },
     {
@@ -206,8 +206,10 @@ export default function AboutMe() {
                 "HTML",
                 "CSS",
                 "JavaScript",
+                "TypeScript",
                 "React.js",
                 "Next.js",
+                "React Native",
                 "Bootstrap",
                 "TailwindCSS",
                 "Git",

@@ -49,19 +49,19 @@ export default function Testimonials() {
     },
     {
       id: 2,
-      name: "Michael Chen",
+      name: "Mr. Samuel",
       role: "Project Manager",
       content:
-        "Working with Abdul-salam on the BookNest project was a pleasure. His technical expertise in React and Next.js, combined with his problem-solving skills, made him an invaluable asset to our team. He consistently met tight deadlines with quality work.",
+        "Working with Abdul-salam on the ThatLocalGirl project was a pleasure. I am happy you're able to deliver quality job on time and effectively. You consistently met tight deadlines with quality work.",
       rating: 5,
       image: "👨‍💼",
     },
     {
       id: 3,
-      name: "Emily Rodriguez",
-      role: "UX Designer",
+      name: "SAM",
+      role: "Royal Moss Hotel Owner",
       content:
-        "I've collaborated with Abdul-salam on multiple projects. His ability to translate design concepts into functional, beautiful interfaces is impressive. He's proactive, communicates well, and truly cares about creating the best user experience.",
+        "I am happy you're able to deliver quality job despite meeting you on Twitter.",
       rating: 5,
       image: "👩‍🎨",
     },
