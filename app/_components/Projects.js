@@ -13,6 +13,8 @@ import booknesthero from "../../public/hero.png";
 import savor from "../../public/Savour.png";
 import UNIZIK from "../../public/UNIZIK.png";
 import verseonehotel from "../../public/verseonehotel.png";
+import amazonworld from "../../public/amazonwrld.png";
+
 
 import lolaselanHero from "../../public/lolaselanHero.png";
 import thatLocalGirlHero from "../../public/thatLocalGirlHero.png";
@@ -52,6 +54,7 @@ export default function Projects() {
   };
 
   const projects = [
+    
     {
       title: "Royal Moss Hotel & Suites",
       description: "Royal Moss Hotel & Suites is a Nigerian Hotel that give hospitality service at view of badagry beach in Lagos, Nigeria. Their website include room listing, room booking with payment system and an admin management system.",      
@@ -59,6 +62,15 @@ export default function Projects() {
       link: "/royal-moss",
       tags: ["Admin management system", "React", "Next.js", "Royal Moss", "Hotel website"],
       type: "project",
+    },
+     {
+      title: "Amazon World",
+      description: "I built an E-commerce website for Amazon World, a fashion brand in Owweri that sells both male and femail clothings. The website has a sleek, modern and mobile responsive design with a payment system.",
+      image: amazonworld,
+      liveLink: "https://amazonwrld.com",
+      reportLink: "",
+      tags: ["E-commerce", "Fashion", "Clothing"],
+      type: "dual-link",
     },
      {
       title: "That Local Girl",
@@ -88,15 +100,7 @@ export default function Projects() {
       tags: ["Hotel website", "Booking", "Responsive"],
       type: "dual-link",
     },
-    {
-      title: "BookNest",
-      description:
-        "BookNest is an online hotel booking system where users can book a room and pay from their device prior to their arrival. Booknest also has an integrated live chat for questions or support and an admin management system.",
-      image: booknesthero,
-      link: "/booknest-project",
-      tags: ["Hotel Booking", "Fullstack", "Payment Integration"],
-      type: "project",
-    },
+
     {
       title: "Savor Restaurant Ordering and Reservation system",
       description:
@@ -115,15 +119,7 @@ export default function Projects() {
       tags: ["Admin Dashboard", "Analytics", "Management"],
       type: "project",
     },
-    {
-      title: "The Wild Oasis",
-      description:
-        "The Wild Oasis Web is a user friendly fullstack application. The purpose of this is to enable users to book cabins that WildOasis company offers.",
-      image: TheWildOasis,
-      link: "/the-wild-oasis-project",
-      tags: ["Cabin Booking", "Fullstack", "Responsive"],
-      type: "project",
-    },
+ 
     {
       title: "UNIZIK Alumni Website",
       description:

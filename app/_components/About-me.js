@@ -40,7 +40,7 @@ export default function AboutMe() {
   const stats = [
     {
       icon: <FiCode className="w-5 h-5" />,
-      value: "16+",
+      value: "17+",
       label: "Projects Completed",
     },
     {
@@ -50,7 +50,7 @@ export default function AboutMe() {
     },
     {
       icon: <FiTool className="w-5 h-5" />,
-      value: "10+",
+      value: "12+",
       label: "Tools Mastered",
     },
   ];
@@ -218,6 +218,8 @@ export default function AboutMe() {
                 "Firebase",
                 "Google Cloud",
                 "Figma",
+                "WordPress",
+                "Elementor"
               ].map((tech, index) => (
                 <span
                   key={index}

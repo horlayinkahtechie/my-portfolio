@@ -41,7 +41,7 @@ export const metadata = {
   publisher: "Alao Abdul-salam Olayinka",
   metadataBase: new URL("https://abdulsalamalao.com"),
   openGraph: {
-    title: "Alao Abdul-salam Olayinka | Frontend Developer",
+    title: "Alao Abdul-salam Olayinka | Website and Mobile App Developer",
     description:
       "Explore my web development projects built with React, Next.js and more.",
     url: "https://abdulsalamalao.com",
